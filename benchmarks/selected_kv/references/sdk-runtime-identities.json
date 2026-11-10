@@ -1,0 +1,22 @@
+{
+  "memfabric_hybrid/cli.py": "644cefec87d729ce559ecd162e021082900943a6170f96f28079925cb0ed1c61",
+  "memfabric_hybrid/env_utils.py": "e93a20b7d2bb7261aff5efafbc2e5d5596c8ecdd2b716ba26d481f203b67eeb1",
+  "memfabric_hybrid/_pymf_transfer.cpython-311-aarch64-linux-gnu.so": "635737e1c2980c0af15aa5e142438aaa2f51a4f2743ffdd4ce7ea7ac97829238",
+  "memfabric_hybrid/_pymf_acc_offload.cpython-311-aarch64-linux-gnu.so": "d3a3139ed0901807c353633fb7ad43ba82823a5da7c26ba7077e868d8b1a3f9a",
+  "memfabric_hybrid/_pymf_hybrid.cpython-311-aarch64-linux-gnu.so": "bc65c5e4005b9580e0875acaef6b2b63cc1fa2bebe50d9c1a58f547da1db7006",
+  "memfabric_hybrid/mf_acc_offload.py": "d3dfe60dc61083a0ee9d8702ff80dee2f7bdfc48438bbd1d0ec94da08024eba9",
+  "memfabric_hybrid/mem_scan.py": "7eeffc19e7c65f34968a7eba29388accb92c51a04392c1d65ca8b1be28681354",
+  "memfabric_hybrid/launch_ascend_mf_store.py": "768807388fdfcd1abe634cb136ab7526f96bb383410f8e336a703227c07158da",
+  "memfabric_hybrid/_acc_offload_build.py": "017c878a4409fbde8c0591a45da674745eceeb5489f29b267f8c33d51135000b",
+  "memfabric_hybrid/__init__.py": "420a6a9a77f47e00d370e5696aa1fceca940a1e71a50e1e4704e78294e15e961",
+  "memfabric_hybrid/lib/libmf_smem.so": "91ef5012e7abc1fa07d5f9f12efdcfb468e4f65c4b23f37928d2d9f284855930",
+  "memfabric_hybrid/lib/libmf_hybm_core.so": "b36943e413a3ea6e8ce8e054a6827efa1e2954b19cb8d459f7534960075b4672",
+  "memfabric_hybrid/lib/libmf_acc_offload.so": "61d39ec35016e6d3427c2217322a38306558df2c481f6b6fdcb912c1907c0652",
+  "memfabric_hybrid/_kernel/hybm/libcann_hybm_kernel.json": "ad531dca541ed24d0205910e7caa8b1b2319f081d8e7c504974ad47e85154b53",
+  "memcache_hybrid/meta_service_leader_election.py": "b1b1617f10441983bb4b5c3d67092ad45f1ad7ec33ba9ec4c24c24e6186f564a",
+  "memcache_hybrid/_pymmc.cpython-311-aarch64-linux-gnu.so": "1449003889ea6b6cbb5a1bc720c2544fc713ef6eea805f4de1180476e09c0e48",
+  "memcache_hybrid/__init__.py": "7a6708755c1b6b67c323123d7a9315cfb9dded160d89a7b36ea278d61898c618",
+  "memcache_hybrid/lib/libmf_memcache.so": "78efa97fcfa731a15c84ce974b06d59c1674f2374f2abd97c204e153691b8bda",
+  "memcache_hybrid/config/mmc-meta.conf": "210810732debdf121cc0c6bd9022df098d455be3547e49f4ccc29fa7abc143b8",
+  "memcache_hybrid/config/mmc-local.conf": "7e64f11907177f22b92b32e2cf805f0652882515b544a3a3d1833d4689fc2324"
+}

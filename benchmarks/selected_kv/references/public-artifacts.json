@@ -1,0 +1,82 @@
+[
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-solana-data-e5980a09.tar.zst",
+    "local_file": "terminus2-OpenAI__GPT-5-solana-data-e5980a09.tar.zst",
+    "sha256": "437df85730a6de1652978d3221b96b35f686c76c8069ad6c3d94d8e5a403f199"
+  },
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-port-compressor-a916ad03.tar.zst",
+    "local_file": "terminus2-OpenAI__GPT-5-port-compressor-a916ad03.tar.zst",
+    "sha256": "cd60ef367603670d722d01e3aa02c245e5e4b32964fd9abf97d48da8735ee613"
+  },
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-add-benchmark-lm-eval-harness-1f231d3c.tar.zst",
+    "local_file": "terminus2-OpenAI__GPT-5-add-benchmark-lm-eval-harness-1f231d3c.tar.zst",
+    "sha256": "60fa93986b8039ea37f821667cff4a7c4d3621692a645a53ab369730b9dc173e"
+  },
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-3d-model-format-legacy-79cf6d53.tar.zst",
+    "local_file": "terminus2-OpenAI__GPT-5-3d-model-format-legacy-79cf6d53.tar.zst",
+    "sha256": "6bcd7e8429d3e2f0c41d1692cb2aa277ce4257932c0596b1924c71b4812237f3"
+  },
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-schemelike-metacircular-eval-6b87c8fa.tar.zst",
+    "local_file": "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-schemelike-metacircular-eval-6b87c8fa.tar.zst",
+    "sha256": "8b6fc373bef8b8d273e4afd9ddeb3023104f041ab6da449bbdb103c1914c1431"
+  },
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-polyglot-rust-c-4df91451.tar.zst",
+    "local_file": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-polyglot-rust-c-4df91451.tar.zst",
+    "sha256": "a58453e04089f07d446d03d784f4f2abba29c92cd3d25068c0a030efcb18fc83"
+  },
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-fix-ocaml-gc-96d6a796.tar.zst",
+    "local_file": "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-fix-ocaml-gc-96d6a796.tar.zst",
+    "sha256": "51ef88aa6eacf762e22f70d0ca61835f9afef31a6ee1093e13978d2db760cfde"
+  },
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-reverse-engineering-885a06d5.tar.zst",
+    "local_file": "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-reverse-engineering-885a06d5.tar.zst",
+    "sha256": "389a9e17887e8b13295b4d84a18f97c9f3bfbb79ac5677cd5644e980d6cdfc6c"
+  },
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-DeepSeek__DeepSeek-V3.2-get-bitcoin-nodes-081db50d.tar.zst",
+    "local_file": "terminus2-DeepSeek__DeepSeek-V3.2-get-bitcoin-nodes-081db50d.tar.zst",
+    "sha256": "39b88cdaf1adfddf8897daf64e8f232848abc384136f7b0a2d8c991acc3f1445"
+  },
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-cross-entropy-method-ff12e6cc.tar.zst",
+    "local_file": "terminus2-OpenAI__GPT-5-cross-entropy-method-ff12e6cc.tar.zst",
+    "sha256": "06ec482f6645bbb877d500ff0fa7acb8f65af4012827894eaba42421cf89ca8b"
+  },
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-DeepSeek__DeepSeek-V3.2-wasm-pipeline-0d31d36b.tar.zst",
+    "local_file": "terminus2-DeepSeek__DeepSeek-V3.2-wasm-pipeline-0d31d36b.tar.zst",
+    "sha256": "d6b178576e8872147b6c2741baed2f9123351e4ec35b5c49b060f353ac5b0607"
+  },
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-DeepSeek__DeepSeek-V3.2-cobol-modernization-9a3a9e4f.tar.zst",
+    "local_file": "terminus2-DeepSeek__DeepSeek-V3.2-cobol-modernization-9a3a9e4f.tar.zst",
+    "sha256": "ccc24bd3cc7542077fc4f64a890037901c310ed8423f35bba57c67fa5e9c8b4d"
+  },
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-Qwen__Qwen3-Coder-480B-A35B-Instruct-pypi-server-03e4faa2.tar.zst",
+    "local_file": "terminus2-Qwen__Qwen3-Coder-480B-A35B-Instruct-pypi-server-03e4faa2.tar.zst",
+    "sha256": "979d5695a3ddc31a5a7ebfb9c1e88d4e5d85365883882b2e0998901bfd136b4d"
+  },
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-OpenAI__GPT-5-huggingface__transformers-27463-9129234e.tar.zst",
+    "local_file": "openhands-OpenAI__GPT-5-huggingface__transformers-27463-9129234e.tar.zst",
+    "sha256": "8046c12884ff5ce1f798935697f9db5136b568b1d9be291d5fa19e9f69e94823"
+  },
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-build-pmars-b132c470.tar.zst",
+    "local_file": "terminus2-OpenAI__GPT-5-build-pmars-b132c470.tar.zst",
+    "sha256": "37d9a65fd1254a070c5679c5526b81898082844ad632e86d12cb0966bfc4f6e7"
+  },
+  {
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-OpenAI__GPT-5-instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan-450efae7.tar.zst",
+    "local_file": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan-450efae7.tar.zst",
+    "sha256": "958d1648e39bac1255d5c0a0c48568c4a5644e00b7032c69e8de82f776a7466c"
+  }
+]

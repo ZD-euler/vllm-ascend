@@ -1,0 +1,37 @@
+{
+  "schema": "sdk13_add_with_info_overlay_v1",
+  "baseline_unchanged": true,
+  "production_files": {
+    "src/memcache/csrc/client/mmc_client_default.h": {
+      "base_sha256": "648e33a20ac2cc1cb66e71440595c22901d882552b16ed52c14dd3e377e0807f",
+      "candidate_sha256": "daa067056cabc8c13a4f84f06c580477126512853e577f9908ded6c659ef6036"
+    },
+    "src/memcache/csrc/client/mmc_client_default.cpp": {
+      "base_sha256": "95ca906dc4d2025a352cce1410c601abb84977f59b50d8be5307003374a9fd67",
+      "candidate_sha256": "bee72dba3af4aeef882ca4ecb78ca5c91045e35bab110f3a3ca108e15a325e7a"
+    },
+    "src/memcache/csrc/mmcache_store.h": {
+      "base_sha256": "5acbc6f135e3f0be3b60135ab44c8d561b4e96b08f9518d914203ce6edec5f2d",
+      "candidate_sha256": "7b1b7394e4564e42dab01e95e80548b70df043088930c8a462d2327340413685"
+    },
+    "src/memcache/csrc/mmcache_store.cpp": {
+      "base_sha256": "84afd20d3667b13315b01702d4261196660620409cfc775e1059ebf13ca390cf",
+      "candidate_sha256": "92380263ab97ae07fc6e79230d26964cfa71e3c56d9acd9a52c51d512a86a51c"
+    },
+    "src/memcache/csrc/python_wrapper/pymmc.cpp": {
+      "base_sha256": "942b98e9cb4f33c401123594e6107199da6c4864d998a85f49f9fac6ca8470d5",
+      "candidate_sha256": "6bcca51f6d89d9762b6e3eafcfb0f19cbc32407f90df263819e6ccbd97057515"
+    },
+    "docs/zh/memcache_python_api.md": {
+      "base_sha256": "2cd949a23204e00a40e176a22fbc9556016b54e508c619811395c21f6bb92a4f",
+      "candidate_sha256": "5cfed50d6089bee9359bd74a5b6aff73c45d57aeb692b1844c9003f26dfb5e40"
+    },
+    "docs/zh/memcache_c++_api.md": {
+      "base_sha256": "8187362c43aced6af74f019d4a7c1ed1d2aa73754c590df1e6ee1981d24da979",
+      "candidate_sha256": "1ea4f9d038524b95a78b8b4a504ce6f5a3b2721f79c1a7f67eb68ee9c21ccf36"
+    }
+  },
+  "full_SDK_build_verified": false,
+  "NPU_verified": false,
+  "API": "batch_add_lease_with_info(keys, lease_ttl_ms=0) -> (statuses, KeyInfos)"
+}

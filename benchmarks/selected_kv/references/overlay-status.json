@@ -1,0 +1,5 @@
+{
+  "status": "generated-custom-op-install-artifacts-required",
+  "source": "runtime-source-hashes.json",
+  "note": "Additional _cann_ops_custom dynamic source and vendor binaries are setup.py build/install outputs; they are reference-hash gated, not silently replaced by current machine output."
+}

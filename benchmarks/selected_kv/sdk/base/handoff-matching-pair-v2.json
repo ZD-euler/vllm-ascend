@@ -1,0 +1,74 @@
+{
+  "kind": "independent_public_matching_C_ABI_SDK_pair_CPU_build",
+  "entry": "build_matching_pair_v1.py",
+  "entry_sha256": "c983f1081291ec8be32c187168f453564ad1b19fd51f6c0d60dbb0a39e0189c4",
+  "archive": "matching_pair_source_v2.tar.gz",
+  "archive_sha256": "a93b02bb537674fe2a672f098edb2d9ff05301bc7eac1555d92bd46beab23dca",
+  "source_manifest": "matching_pair_source_manifest_v1.json",
+  "source_manifest_sha256": "5f634c2ef0e6c4c6ed2941f4fa3ee815481b92d5395f7465a9415ca4062fc08a",
+  "MMC_commit": "0e4b7bd587ff0e7f716b41d9395ea6ac34154502",
+  "MF_commit": "331f2e7acc5b5155e704e3e3d1aa96bccf38bbe5",
+  "MMC_CXX11_ABI": 1,
+  "MF_CXX11_ABI": 0,
+  "ABI_reason": "MF pybind modules explicitly forceABI0, so MF native uses0; MMC nestedspdlog defaultABI1 so MMC uses1; new official pureC ABI version-gated boundary supports this exactcross ABI arrangement",
+  "commands": [
+    [
+      "TARGET_VENV_PYTHON",
+      "build_matching_pair_v1.py",
+      "--sources",
+      "/OWNED/EXTRACTED_SOURCE",
+      "--manifest",
+      "/OWNED/matching_pair_source_manifest_v1.json",
+      "--out",
+      "/OWNED/FRESH_build_output",
+      "--python",
+      "/TARGET/VENV/bin/python3",
+      "--jobs",
+      "8"
+    ]
+  ],
+  "source_archive_contains": [
+    "mf/",
+    "mmc/ plus4 exactgitlinkdeps; no.git; no binaries"
+  ],
+  "default_feature_flags": {
+    "MF": {
+      "XPU_TYPE": "NPU",
+      "BUILD_UT": "OFF",
+      "BUILD_TEST": "OFF",
+      "BUILD_HCOM": "OFF",
+      "BUILD_ETCD_BACKEND": "OFF"
+    },
+    "MMC": {
+      "BUILD_TESTS": "OFF",
+      "MMC_ENABLE_KV_EVENTS": "OFF",
+      "BUILD_UBSIO": "OFF"
+    },
+    "both": {
+      "BUILD_GIT_COMMIT": "OFF",
+      "BUILD_PYTHON": "ON",
+      "ENABLE_PTRACER": "OFF",
+      "FETCHCONTENT_FULLY_DISCONNECTED": "ON"
+    }
+  },
+  "no_NPU_init": true,
+  "no_SDK_import": true,
+  "no_pip_or_system_install": true,
+  "output": "public-build.json +prefix libs+site Python package overlay",
+  "CPU_build_executed": false,
+  "required_C_ABI_symbols": 54,
+  "optional_AICPU": "--build-aicpu runs audited official owned-tree compile/package script; not global install. Root must verify CANN9.1/toolchain and missing artifacts fail. Default false leaves this hardware kernel gate unqualified.",
+  "gates_after_build": [
+    "stock explicitinit/close naturalchild+Metaexit0",
+    "native actual continuous/discrete copybytes0 normalexit",
+    "M2 8byte page-wave real oracle0 normalexit",
+    "6layer numerical/performance model"
+  ],
+  "independent_review": "m2_design agent reviewed defaultCPU branch; actualLinuxcompile pending",
+  "known_limits": [
+    "Public currentsource code may still includeResourceTracker lifetime issue; do not assumenewpair fixesSIGABRT beforeactualstockcontrols",
+    "Root must scope run env PYTHONPATH and LD_LIBRARY_PATH only to this ownedsite; original SDK remainsbaseline",
+    "No productionbenchmark baseline silentlychanged"
+  ],
+  "archive_filter_note": "Omit 2 broken, non-build public MF agent-document symlinks (.claude/skills and CLAUDE.md). All 3694 manifest regular build/source files identical; v1tar retained as evidence but strict builder rejects its symlinks. Publication archive headers normalized to uid/gid 0, empty owner names and mtime 0; member contents and source manifest hashes unchanged."
+}

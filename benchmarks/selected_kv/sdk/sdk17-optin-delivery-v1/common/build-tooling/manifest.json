@@ -1,0 +1,10 @@
+{
+  "script/build_and_pack_run.sh": {
+    "base_sha256": "cbe2da36f1275eb669fc18a5354777ae1cb615b8cce032982649a01e2e1f05d2",
+    "candidate_sha256": "28f535ed8636dd62083717e3680dec3d99c837683c1875b8b813582c38570cfd"
+  },
+  "script/build.sh": {
+    "base_sha256": "e756d75717b52ff11f8c572ac4985fe75c0f1affbb02f3aa3c9f993dcf7849fd",
+    "candidate_sha256": "3f479d405f0a041a3f8f26c5e428285411351a9a8fe7b54c0659b4c1c090be9d"
+  }
+}

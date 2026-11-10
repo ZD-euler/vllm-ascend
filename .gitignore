@@ -238,3 +238,29 @@ csrc/third_party/
 
 # local build cache
 .vllm_ascend/
+
+# Local M3v15 reproduction artifacts; keep model/data/run roots outside this repository.
+/data/
+/models/
+/weights/
+/runs/
+/results/
+/outputs/
+/.repro/
+/.venv/
+/venv/
+/.env
+/.env.*
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.so
+*.so.*
+*.o
+*.pyc
+__pycache__/
+*.egg-info/
+_cann_ops_custom/
+build/
+dist/

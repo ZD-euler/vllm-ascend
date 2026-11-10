@@ -1,0 +1,2 @@
+# Preserve required single-space context markers in this frozen unified diff.
+benchmarks/selected_kv/sdk/sdk17-optin-delivery-v1/unrestricted-v17/unrestricted-v17.patch whitespace=-blank-at-eol

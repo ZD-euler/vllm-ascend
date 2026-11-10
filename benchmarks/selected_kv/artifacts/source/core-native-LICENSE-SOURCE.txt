@@ -1,0 +1,1 @@
+core-native-LICENSE was copied read-only from the actual reference core-native root on 2026-11-10. core-native-runtime-source.tar.gz is a runtime-source whitelist snapshot, not a complete Git checkout.

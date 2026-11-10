@@ -1,0 +1,14 @@
+{
+  "session_id": "reproduction-001",
+  "model6": "/data/m3v15-reproduction/build/model6",
+  "model78": "/data/m3v15-reproduction/build/model78",
+  "m3_source": ".",
+  "core": "/data/m3v15-reproduction/code/core-native",
+  "sdk": "/data/m3v15-reproduction/build/sdk17/build/site",
+  "cann": "/usr/local/Ascend/ascend-toolkit/9.1.0",
+  "corpus": "/data/m3v15-reproduction/data/manifest.json",
+  "token_root": "/data/m3v15-reproduction/data",
+  "m3_base_receipt": "/data/m3v15-reproduction/build/base-m3/receipt.json",
+  "sdk_receipt": "/data/m3v15-reproduction/build/sdk17/receipt.json",
+  "feature_receipt": "/data/m3v15-reproduction/build/m3-features/receipt.json"
+}

@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "mode": "read_only_raw_bytes_verification",
+  "dtype_conversion": false,
+  "tensor_count": 12,
+  "checks": [
+    {
+      "name": "model.layers.0.input_layernorm.weight",
+      "full_matches_reference": true,
+      "selected_matches_reference": true
+    },
+    {
+      "name": "model.layers.0.post_attention_layernorm.weight",
+      "full_matches_reference": true,
+      "selected_matches_reference": true
+    },
+    {
+      "name": "model.layers.0.mlp.down_proj.weight_scale",
+      "full_matches_reference": true,
+      "selected_matches_reference": true
+    },
+    {
+      "name": "model.layers.0.mlp.gate_proj.weight_scale",
+      "full_matches_reference": true,
+      "selected_matches_reference": true
+    },
+    {
+      "name": "model.layers.5.input_layernorm.weight",
+      "full_matches_reference": true,
+      "selected_matches_reference": true
+    },
+    {
+      "name": "model.layers.5.post_attention_layernorm.weight",
+      "full_matches_reference": true,
+      "selected_matches_reference": true
+    },
+    {
+      "name": "model.layers.5.mlp.experts.0.down_proj.weight_scale",
+      "full_matches_reference": true,
+      "selected_matches_reference": true
+    },
+    {
+      "name": "model.layers.5.mlp.experts.0.gate_proj.weight_scale",
+      "full_matches_reference": true,
+      "selected_matches_reference": true
+    },
+    {
+      "name": "lm_head.weight",
+      "full_matches_reference": true,
+      "selected_matches_reference": true
+    },
+    {
+      "name": "model.embed_tokens.weight",
+      "full_matches_reference": true,
+      "selected_matches_reference": true
+    },
+    {
+      "name": "model.layers.0.mlp.down_proj.weight",
+      "full_matches_reference": true,
+      "selected_matches_reference": true
+    },
+    {
+      "name": "model.layers.0.mlp.down_proj.weight_offset",
+      "full_matches_reference": true,
+      "selected_matches_reference": true
+    }
+  ],
+  "validation_scope": "CPU tensor raw-byte hash comparison only; no NPU model acceptance claim. Static NPU state field omitted from published evidence."
+}

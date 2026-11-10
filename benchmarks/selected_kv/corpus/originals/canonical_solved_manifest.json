@@ -1,0 +1,220 @@
+[
+  {
+    "traj_id": "terminus2-DeepSeek__DeepSeek-V3.2-get-bitcoin-nodes-081db50d",
+    "agent": "Terminus2",
+    "task_name": "get-bitcoin-nodes",
+    "step_count": 136,
+    "solved": true,
+    "category": "software-engineering",
+    "tags": [
+      "api",
+      "coding",
+      "data-processing"
+    ],
+    "artifact_path": "bench_artifacts/full/terminus2-DeepSeek__DeepSeek-V3.2-get-bitcoin-nodes-081db50d.tar.zst",
+    "source_relpath": "terminus2/DeepSeek__DeepSeek-V3.2/terminus2-ds/get-bitcoin-nodes/get-bitcoin-nodes.1-of-1.2025-12-30__11-51-01",
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-DeepSeek__DeepSeek-V3.2-get-bitcoin-nodes-081db50d.tar.zst",
+    "local_file": "terminus2-DeepSeek__DeepSeek-V3.2-get-bitcoin-nodes-081db50d.tar.zst",
+    "bytes": 100979,
+    "sha256": "39b88cdaf1adfddf8897daf64e8f232848abc384136f7b0a2d8c991acc3f1445",
+    "canonical_file": "get-bitcoin-nodes.txt",
+    "canonical_events": 67,
+    "canonical_chars": 151563,
+    "canonical_bytes": 151734,
+    "canonical_sha256": "cac13bd1158ee649b7c0a42286cc54b6fc6988c36c55874cbe52e95a797dc8a5",
+    "canonical_archive_members": [
+      "terminus2/DeepSeek__DeepSeek-V3.2/terminus2-ds/get-bitcoin-nodes/get-bitcoin-nodes.1-of-1.2025-12-30__11-51-01/agent-logs/episode-33/debug.json"
+    ],
+    "extraction": "one chronological event stream; duplicate storage snapshots excluded; original commands and outputs retained"
+  },
+  {
+    "traj_id": "terminus2-OpenAI__GPT-5-cross-entropy-method-ff12e6cc",
+    "agent": "Terminus2",
+    "task_name": "cross-entropy-method",
+    "step_count": 120,
+    "solved": true,
+    "category": "software-engineering",
+    "tags": [
+      "coding",
+      "reinforcement-learning",
+      "algorithm-implementation",
+      "optimization",
+      "unit-testing",
+      "caching"
+    ],
+    "artifact_path": "bench_artifacts/full/terminus2-OpenAI__GPT-5-cross-entropy-method-ff12e6cc.tar.zst",
+    "source_relpath": "terminus2/OpenAI__GPT-5/terminus2-gpt5/cross-entropy-method/cross-entropy-method.1-of-1.2025-12-30__12-34-36",
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-cross-entropy-method-ff12e6cc.tar.zst",
+    "local_file": "terminus2-OpenAI__GPT-5-cross-entropy-method-ff12e6cc.tar.zst",
+    "bytes": 118234,
+    "sha256": "06ec482f6645bbb877d500ff0fa7acb8f65af4012827894eaba42421cf89ca8b",
+    "canonical_file": "cross-entropy-method.txt",
+    "canonical_events": 45,
+    "canonical_chars": 123378,
+    "canonical_bytes": 123396,
+    "canonical_sha256": "cbd19e21974c340c7de98cec2c1d18d49d7602bda5806b3bb401ff13cfdd0684",
+    "canonical_archive_members": [
+      "terminus2/OpenAI__GPT-5/terminus2-gpt5/cross-entropy-method/cross-entropy-method.1-of-1.2025-12-30__12-34-36/agent-logs/episode-22/debug.json"
+    ],
+    "extraction": "one chronological event stream; duplicate storage snapshots excluded; original commands and outputs retained"
+  },
+  {
+    "traj_id": "terminus2-DeepSeek__DeepSeek-V3.2-wasm-pipeline-0d31d36b",
+    "agent": "Terminus2",
+    "task_name": "wasm-pipeline",
+    "step_count": 111,
+    "solved": true,
+    "category": "software-engineering",
+    "tags": [
+      "wasm",
+      "dynamic-linking"
+    ],
+    "artifact_path": "bench_artifacts/full/terminus2-DeepSeek__DeepSeek-V3.2-wasm-pipeline-0d31d36b.tar.zst",
+    "source_relpath": "terminus2/DeepSeek__DeepSeek-V3.2/terminus2-ds/wasm-pipeline/wasm-pipeline.1-of-1.2025-12-30__11-51-01",
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-DeepSeek__DeepSeek-V3.2-wasm-pipeline-0d31d36b.tar.zst",
+    "local_file": "terminus2-DeepSeek__DeepSeek-V3.2-wasm-pipeline-0d31d36b.tar.zst",
+    "bytes": 65647,
+    "sha256": "d6b178576e8872147b6c2741baed2f9123351e4ec35b5c49b060f353ac5b0607",
+    "canonical_file": "wasm-pipeline.txt",
+    "canonical_events": 95,
+    "canonical_chars": 95939,
+    "canonical_bytes": 95939,
+    "canonical_sha256": "8bddf28145a44a633af8dd97ae2c077f254508c8fdbae521fc8cc8cd2e1f56fe",
+    "canonical_archive_members": [
+      "terminus2/DeepSeek__DeepSeek-V3.2/terminus2-ds/wasm-pipeline/wasm-pipeline.1-of-1.2025-12-30__11-51-01/agent-logs/episode-47/debug.json"
+    ],
+    "extraction": "one chronological event stream; duplicate storage snapshots excluded; original commands and outputs retained"
+  },
+  {
+    "traj_id": "terminus2-DeepSeek__DeepSeek-V3.2-cobol-modernization-9a3a9e4f",
+    "agent": "Terminus2",
+    "task_name": "cobol-modernization",
+    "step_count": 99,
+    "solved": true,
+    "category": "software-engineering",
+    "tags": [
+      "coding"
+    ],
+    "artifact_path": "bench_artifacts/full/terminus2-DeepSeek__DeepSeek-V3.2-cobol-modernization-9a3a9e4f.tar.zst",
+    "source_relpath": "terminus2/DeepSeek__DeepSeek-V3.2/terminus2-ds/cobol-modernization/cobol-modernization.1-of-1.2025-12-30__11-51-01",
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-DeepSeek__DeepSeek-V3.2-cobol-modernization-9a3a9e4f.tar.zst",
+    "local_file": "terminus2-DeepSeek__DeepSeek-V3.2-cobol-modernization-9a3a9e4f.tar.zst",
+    "bytes": 44403,
+    "sha256": "ccc24bd3cc7542077fc4f64a890037901c310ed8423f35bba57c67fa5e9c8b4d",
+    "canonical_file": "cobol-modernization.txt",
+    "canonical_events": 35,
+    "canonical_chars": 74032,
+    "canonical_bytes": 74032,
+    "canonical_sha256": "123eb5717d6215bfd810cf1d2b0200c3c66a91b6729d2c94c7cda3d1374a5a82",
+    "canonical_archive_members": [
+      "terminus2/DeepSeek__DeepSeek-V3.2/terminus2-ds/cobol-modernization/cobol-modernization.1-of-1.2025-12-30__11-51-01/agent-logs/episode-17/debug.json"
+    ],
+    "extraction": "one chronological event stream; duplicate storage snapshots excluded; original commands and outputs retained"
+  },
+  {
+    "traj_id": "terminus2-Qwen__Qwen3-Coder-480B-A35B-Instruct-pypi-server-03e4faa2",
+    "agent": "Terminus2",
+    "task_name": "pypi-server",
+    "step_count": 85,
+    "solved": true,
+    "category": "software-engineering",
+    "tags": [
+      "coding",
+      "system"
+    ],
+    "artifact_path": "bench_artifacts/full/terminus2-Qwen__Qwen3-Coder-480B-A35B-Instruct-pypi-server-03e4faa2.tar.zst",
+    "source_relpath": "terminus2/Qwen__Qwen3-Coder-480B-A35B-Instruct/terminus2-480b/pypi-server/pypi-server.1-of-1.2025-12-16__02-57-21",
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-Qwen__Qwen3-Coder-480B-A35B-Instruct-pypi-server-03e4faa2.tar.zst",
+    "local_file": "terminus2-Qwen__Qwen3-Coder-480B-A35B-Instruct-pypi-server-03e4faa2.tar.zst",
+    "bytes": 98538,
+    "sha256": "979d5695a3ddc31a5a7ebfb9c1e88d4e5d85365883882b2e0998901bfd136b4d",
+    "canonical_file": "pypi-server.txt",
+    "canonical_events": 169,
+    "canonical_chars": 108526,
+    "canonical_bytes": 108559,
+    "canonical_sha256": "4c68dec087825f13b9229d7ffdb0bc635288757b75ba78a8fbefe4ef147aa09f",
+    "canonical_archive_members": [
+      "terminus2/Qwen__Qwen3-Coder-480B-A35B-Instruct/terminus2-480b/pypi-server/pypi-server.1-of-1.2025-12-16__02-57-21/agent-logs/episode-84/debug.json"
+    ],
+    "extraction": "one chronological event stream; duplicate storage snapshots excluded; original commands and outputs retained"
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-27463-9129234e",
+    "agent": "OpenHands",
+    "task_name": "huggingface__transformers-27463",
+    "step_count": 85,
+    "solved": true,
+    "category": "software-engineering",
+    "tags": [],
+    "artifact_path": "bench_artifacts/full/openhands-OpenAI__GPT-5-huggingface__transformers-27463-9129234e.tar.zst",
+    "source_relpath": "swe_raw/openhands__poly/huggingface__transformers-27463",
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-OpenAI__GPT-5-huggingface__transformers-27463-9129234e.tar.zst",
+    "local_file": "openhands-OpenAI__GPT-5-huggingface__transformers-27463-9129234e.tar.zst",
+    "bytes": 274846,
+    "sha256": "8046c12884ff5ce1f798935697f9db5136b568b1d9be291d5fa19e9f69e94823",
+    "canonical_file": "huggingface__transformers-27463.txt",
+    "canonical_events": 182,
+    "canonical_chars": 457993,
+    "canonical_bytes": 458060,
+    "canonical_sha256": "b3a608d923111a27d8acb81427f619d15a6501fa637b523f512b6a9c852d7335",
+    "canonical_archive_members": [
+      "swe_raw/openhands__poly/huggingface__transformers-27463/gpt-5-1769084714.196264.json"
+    ],
+    "extraction": "one chronological event stream; duplicate storage snapshots excluded; original commands and outputs retained"
+  },
+  {
+    "traj_id": "terminus2-OpenAI__GPT-5-build-pmars-b132c470",
+    "agent": "Terminus2",
+    "task_name": "build-pmars",
+    "step_count": 72,
+    "solved": true,
+    "category": "software-engineering",
+    "tags": [
+      "build-tools",
+      "compilation",
+      "debian",
+      "gaming",
+      "pmars",
+      "corewars"
+    ],
+    "artifact_path": "bench_artifacts/full/terminus2-OpenAI__GPT-5-build-pmars-b132c470.tar.zst",
+    "source_relpath": "terminus2/OpenAI__GPT-5/terminus2-gpt5/build-pmars/build-pmars.1-of-1.2025-12-30__12-34-36",
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-build-pmars-b132c470.tar.zst",
+    "local_file": "terminus2-OpenAI__GPT-5-build-pmars-b132c470.tar.zst",
+    "bytes": 51327,
+    "sha256": "37d9a65fd1254a070c5679c5526b81898082844ad632e86d12cb0966bfc4f6e7",
+    "canonical_file": "build-pmars.txt",
+    "canonical_events": 13,
+    "canonical_chars": 46829,
+    "canonical_bytes": 46857,
+    "canonical_sha256": "e5acb234c4a8788f91d544057ff91d78bf5e418bf140760649ea3ff9da4905a3",
+    "canonical_archive_members": [
+      "terminus2/OpenAI__GPT-5/terminus2-gpt5/build-pmars/build-pmars.1-of-1.2025-12-30__12-34-36/agent-logs/episode-6/debug.json"
+    ],
+    "extraction": "one chronological event stream; duplicate storage snapshots excluded; original commands and outputs retained"
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan-450efae7",
+    "agent": "OpenHands",
+    "task_name": "instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan",
+    "step_count": 72,
+    "solved": true,
+    "category": "software-engineering",
+    "tags": [],
+    "artifact_path": "bench_artifacts/full/openhands-OpenAI__GPT-5-instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan-450efae7.tar.zst",
+    "source_relpath": "swe_raw/openhands__pro/instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan",
+    "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-OpenAI__GPT-5-instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan-450efae7.tar.zst",
+    "local_file": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan-450efae7.tar.zst",
+    "bytes": 87521,
+    "sha256": "958d1648e39bac1255d5c0a0c48568c4a5644e00b7032c69e8de82f776a7466c",
+    "canonical_file": "instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan.txt",
+    "canonical_events": 148,
+    "canonical_chars": 298643,
+    "canonical_bytes": 299332,
+    "canonical_sha256": "926bdb38a57f632651fed3b99ad9a798d96f5aa436e7046a66aac28987ddd360",
+    "canonical_archive_members": [
+      "swe_raw/openhands__pro/instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan/gpt-5-1769260596.5938492.json"
+    ],
+    "extraction": "one chronological event stream; duplicate storage snapshots excluded; original commands and outputs retained"
+  }
+]

@@ -1,0 +1,122 @@
+--- a/src/memcache/csrc/config/mmc_config_const.h
++++ b/src/memcache/csrc/config/mmc_config_const.h
+@@ -125,6 +125,10 @@
+ constexpr auto OCK_MMC_LOCAL_SERVICE_STORAGE_ENABLED = std::make_pair("ock.mmc.local_service.storage.enabled", false);
+ constexpr auto OCK_MMC_ASYNC_FLUSH_INTERVAL_MS = std::make_pair("ock.mmc.storage.async_flush.interval_ms", 200);
+ constexpr auto OCK_MMC_ASYNC_FLUSH_BATCH_LIMIT = std::make_pair("ock.mmc.storage.async_flush.batch_limit", 20);
++// Opt-in ordinary 2MiB DRAM through MF1.3 HYBM_FLAG_UNRESTRICTED_MEM.
++constexpr auto OCK_MMC_LOCAL_SERVICE_DRAM_UNRESTRICTED =
++    std::make_pair("ock.mmc.local_service.dram.unrestricted.enabled", false);
++
+ constexpr auto OCK_MMC_LOCAL_SERVICE_DRAM_BEST_EFFORT =
+     std::make_pair("ock.mmc.local_service.dram.best_effort.enabled", false);
+ 
+--- a/src/memcache/csrc/config/mmc_configuration.h
++++ b/src/memcache/csrc/config/mmc_configuration.h
+@@ -39,6 +39,8 @@
+ namespace ock {
+ namespace mmc {
+ constexpr uint32_t CONF_MUST = 1;
++// Existing MF1.3 HyBM flag; public request/config struct layouts are unchanged.
++constexpr uint32_t MMC_BM_FLAG_DRAM_UNRESTRICTED = (1U << 11);
+ constexpr uint64_t DRAM_SIZE_ALIGNMENT = 2097152; // 2MB
+ constexpr uint64_t HBM_SIZE_ALIGNMENT = 2097152;  // 2MB
+ 
+@@ -433,6 +435,8 @@
+             0);
+         AddBoolConf(OCK_MMC_LOCAL_SERVICE_STORAGE_ENABLED,
+                     VStrEnum::Create(OCK_MMC_LOCAL_SERVICE_STORAGE_ENABLED.first, BOOL_ENUM_STR), 0);
++        AddBoolConf(OCK_MMC_LOCAL_SERVICE_DRAM_UNRESTRICTED,
++                    VStrEnum::Create(OCK_MMC_LOCAL_SERVICE_DRAM_UNRESTRICTED.first, BOOL_ENUM_STR), 0);
+         AddBoolConf(OCK_MMC_LOCAL_SERVICE_DRAM_BEST_EFFORT,
+                     VStrEnum::Create(OCK_MMC_LOCAL_SERVICE_DRAM_BEST_EFFORT.first, BOOL_ENUM_STR), 0);
+         AddIntConf(OCK_MMC_CLIENT_AGGREGATE_NUM,
+@@ -469,6 +473,9 @@
+         config.localHBMSize = GetUInt64(ConfConstant::OKC_MMC_LOCAL_SERVICE_HBM_SIZE.first, 0);
+         config.localMaxHBMSize = GetUInt64(ConfConstant::OKC_MMC_LOCAL_SERVICE_MAX_HBM_SIZE.first, config.localHBMSize);
+         config.storageEnabled = GetBool(ConfConstant::OCK_MMC_LOCAL_SERVICE_STORAGE_ENABLED);
++        if (GetBool(ConfConstant::OCK_MMC_LOCAL_SERVICE_DRAM_UNRESTRICTED)) {
++            config.flags |= MMC_BM_FLAG_DRAM_UNRESTRICTED;
++        }
+         if (GetBool(ConfConstant::OCK_MMC_LOCAL_SERVICE_DRAM_BEST_EFFORT)) {
+             config.flags |= SMEM_BM_FLAG_DRAM_BEST_EFFORT;
+         }
+@@ -508,6 +515,10 @@
+         constexpr uint64_t GB_SIZE_ALIGNMENT = 1073741824; // 1GB
+         uint64_t alignment = DRAM_SIZE_ALIGNMENT;          // 默认 2MB 对齐
+         std::string protocol(config.dataOpType);
++        if ((config.flags & MMC_BM_FLAG_DRAM_UNRESTRICTED) != 0U && protocol != "device_sdma") {
++            MMC_LOG_ERROR("dram.unrestricted requires device_sdma, protocol:" << protocol);
++            return MMC_INVALID_PARAM;
++        }
+ 
+         if (protocol == "device_rdma" || protocol == "device_urma" || protocol == "device_uboe" ||
+             protocol == "device_sdma") {
+--- a/docs/zh/memcache_config.md
++++ b/docs/zh/memcache_config.md
+@@ -117,3 +117,15 @@
+ |                                                |            |              |                      |                                                                                       |                                                                                                                                                                                                                                          |
+ | ock.mmc.dynamic_config.enable                  | bool       | optional     | true                 | true/false                                                                            | Enable dynamic config polling. When enabled, LocalService periodically checks the config file for `meta_service_url`, `config_store_url`, `log_level` and client tunables (`retry_milliseconds`, `aggregate.io/num`, `batch_option.chunk.size/count`) changes and applies them without restart          |
+ | ock.mmc.dynamic_config.interval                | integer    | optional     | 5                    | [1, 300]                                                                              | Polling interval in seconds for dynamic config file check                                                                                                                                                                                |
++
++
++### Opt-in ordinary DDR allocation for `device_sdma`
++
++`ock.mmc.local_service.dram.unrestricted.enabled` defaults to `false`.
++When explicitly `true`, MMC passes MF1.3's existing `HYBM_FLAG_UNRESTRICTED_MEM`
++to use ordinary 2MiB DDR rather than the default P2P-DDR allocation path.
++Other protocols are rejected when this option is enabled. Existing request,
++config-struct and operator interfaces do not change; the default path is unchanged.
++The ordinary-DDR branch does not honor NUMA flag bits, so this option does not
++promise a particular NUMA placement. Qualify real multi-device SDMA/MTE and
++model correctness before accepting this deployment configuration.
+--- a/test/ut/testcase/memcache/csrc/config/test_mmc_configuration.cpp
++++ b/test/ut/testcase/memcache/csrc/config/test_mmc_configuration.cpp
+@@ -805,3 +805,47 @@
+     const auto rankMap = counter.GetRankMap();
+     EXPECT_EQ(rankMap.at(validRank), 4U); // 1 + 5 - 2
+ }
++
++
++TEST_F(TestMmcConfiguration, DramUnrestrictedDefaultDisabled)
++{
++    ClientConfig client;
++    auto input = CreateLocalConfigWithCurrentDefaults();
++    ASSERT_TRUE(client.Setup(&input));
++    mmc_local_service_config_t config{};
++    client.GetLocalServiceConfig(config);
++    EXPECT_EQ(config.flags & MMC_BM_FLAG_DRAM_UNRESTRICTED, 0U);
++}
++
++TEST_F(TestMmcConfiguration, DramUnrestrictedEnabledForSdma)
++{
++    ClientConfig client;
++    auto input = CreateLocalConfigWithCurrentDefaults();
++    ASSERT_TRUE(client.Setup(&input));
++    client.Set(ConfConstant::OCK_MMC_LOCAL_SERVICE_DRAM_UNRESTRICTED.first, true);
++    client.Set(ConfConstant::OKC_MMC_LOCAL_SERVICE_PROTOCOL.first, std::string("device_sdma"));
++    mmc_local_service_config_t config{};
++    client.GetLocalServiceConfig(config);
++    EXPECT_NE(config.flags & MMC_BM_FLAG_DRAM_UNRESTRICTED, 0U);
++    EXPECT_EQ(ClientConfig::ValidateLocalServiceConfig(config), MMC_OK);
++}
++
++TEST_F(TestMmcConfiguration, DramUnrestrictedRejectsOtherProtocols)
++{
++    mmc_local_service_config_t config{};
++    config.flags = MMC_BM_FLAG_DRAM_UNRESTRICTED;
++    SafeCopy("host_rdma", config.dataOpType, sizeof(config.dataOpType));
++    EXPECT_EQ(ClientConfig::ValidateLocalServiceConfig(config), MMC_INVALID_PARAM);
++}
++
++TEST_F(TestMmcConfiguration, DramUnrestrictedFalsePreservesBestEffort)
++{
++    ClientConfig client;
++    auto input = CreateLocalConfigWithCurrentDefaults();
++    ASSERT_TRUE(client.Setup(&input));
++    client.Set(ConfConstant::OCK_MMC_LOCAL_SERVICE_DRAM_UNRESTRICTED.first, false);
++    client.Set(ConfConstant::OCK_MMC_LOCAL_SERVICE_DRAM_BEST_EFFORT.first, true);
++    mmc_local_service_config_t config{};
++    client.GetLocalServiceConfig(config);
++    EXPECT_EQ(config.flags, SMEM_BM_FLAG_DRAM_BEST_EFFORT);
++}

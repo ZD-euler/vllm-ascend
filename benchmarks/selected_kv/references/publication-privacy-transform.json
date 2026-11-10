@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "scope": "Publication-only path and metadata normalization; no production code or trusted original production pins changed.",
+  "reference_template_root": "/repro/reference-root",
+  "path_semantics": "Recovered historical scripts are reference templates. prepare_run relocates model/output/deploy/corpus locations from explicit settings; its token-root matching marker is the same publication alias. No seed, burst, profiler or arithmetic logic is changed.",
+  "archive_header_policy": {
+    "uid": 0,
+    "gid": 0,
+    "uname": "",
+    "gname": "",
+    "mtime": 0,
+    "member_contents": "unchanged"
+  },
+  "changed_files": [
+    {
+      "path": "artifacts/source/REVISIONS.json",
+      "original_sha256": "d898f2d6dc6314a5f3f4f5c085e960b0faa65f508cad920b5a2670306f12bcb2",
+      "publication_sha256": "14555c1df02741abf28e0ae0a6fe2009bf00512c8e036493593eeded1b61e948"
+    },
+    {
+      "path": "corpus/originals/make_dp2_t2048_corpus.py",
+      "original_sha256": "cdf588127eb28b832db2b226b59e39fafc51efa3047e5406b787c9e41f901591",
+      "publication_sha256": "2996897dc5cfa867728e262de56ae8c1d926f39e1a08f44daed53409969730cf"
+    },
+    {
+      "path": "corpus/originals/make_t1k_corpus.py",
+      "original_sha256": "9c93c7e0a16f7145b07e73b3f82ec6bcfdef50adc686d8b0650381aaec542dde",
+      "publication_sha256": "5eef400f0133d4a482dc9c45be5b0454a6590204166e309ed7146e028fc3c880"
+    },
+    {
+      "path": "corpus/originals/tokenize_canonical.py",
+      "original_sha256": "2803c6b221bd332135889598883ed49147f9d072f561c9fbda6b5d1624dc7d25",
+      "publication_sha256": "4150b7fbf450fda8952f3c97231ad2d3760e43324a59b5588c026d4fbfe41e24"
+    },
+    {
+      "path": "recovered/early_store_handoff.py",
+      "original_sha256": "a6b5cd2ee651a49bf1c61c573e1566e4a4eb3c5700818cf0ff85c2f8869b6fcd",
+      "publication_sha256": "5438d8ed5547ce9b80d2dc505f833ffe2e0d115fbf177b0acb7c14634539bce2"
+    },
+    {
+      "path": "recovered/smoke4-input-v2/engine-m3v9.json",
+      "original_sha256": "9e0bbdd8a116084d9df475f44c442abd8b3e1afa991679fe81b7e70519d88dc7",
+      "publication_sha256": "e92f058b1e6c4312e55e4eeb4fa3b89b84570e1cf2ec419f93f03c337a1f086b"
+    },
+    {
+      "path": "recovered/smoke4-input-v2/engine-native.json",
+      "original_sha256": "727bfd4ebb8132fcfc21058882097033dbf100cd50c7fdbc5e31b38937a229ff",
+      "publication_sha256": "407594a3beb7823677f358a28ae3b139c33436cc46883f4a4be12b46df31972f"
+    },
+    {
+      "path": "recovered/smoke4-input-v2/harness/controller.py",
+      "original_sha256": "165a0faf62868730a06ea1ddca642696ae55753a8ff7556899344d4f29da1f32",
+      "publication_sha256": "1cc20efbb194e06c37ff3732064f876c3f611d98e67043c66c0593c35ed8f714"
+    },
+    {
+      "path": "recovered/smoke4-input-v2/harness/export_compare.py",
+      "original_sha256": "ad8dfc8cf503d5612625a028f726d7f9684f083a24f75a93b8d2bb39293f1808",
+      "publication_sha256": "54f8672ca8ec630286828a752f57f3037815edc2183d2eb39f65506efa90feed"
+    },
+    {
+      "path": "recovered/smoke4-input-v2/harness/export_mte.py",
+      "original_sha256": "d69b888d63f183186ca484ed5c00e84088da10850f8c1db0e1e8ce379235f53d",
+      "publication_sha256": "560a071ac572bffe58087b5e414603a6acf6de36c31c210c16e39de3d47c0d31"
+    },
+    {
+      "path": "recovered/smoke4-input-v2/harness/preflight.py",
+      "original_sha256": "2fe5fb6a767a36601718fc254cd8ea9c22d0f1f8722ae6195df07170895f70ef",
+      "publication_sha256": "a0e741bc8d1d192d28a76bf0219e492d4219272cb8185df8d6f91f8766a94a72"
+    },
+    {
+      "path": "recovered/smoke4-input-v2/harness/run_cases.py",
+      "original_sha256": "e039c88693d37531016f8a1a22f0819ce61101a9cb751160bc40b0ed31242e97",
+      "publication_sha256": "0eeceb4279761c232e89500a89b81ad8ddf41f29fb73f88fac0e1184d9dd41f7"
+    },
+    {
+      "path": "recovered/trace-m3v15/engine-m3v9.json",
+      "original_sha256": "e06d3880525e6b64599e8bfd2681927bdf40ddb007761ccc590e1cba55b52316",
+      "publication_sha256": "99b8ff3651502e034f9474829074b20a55bf37cabee5cac9358136e4a28856e2"
+    },
+    {
+      "path": "recovered/trace-m3v15/harness/controller.py",
+      "original_sha256": "0ec3b89aecd876471359d8d83282f64cf0549667f6929ad770dd14d06e633d87",
+      "publication_sha256": "d53b934b3b9ea9d6636280afe93dcbe77ba3ec84ca910fe6091446b10db2e454"
+    },
+    {
+      "path": "recovered/trace-m3v15/harness/export_compare.py",
+      "original_sha256": "6acc8a8188774cb7d87ebc80f99aa4f522ead726a0287b52f36919d9a94eb72e",
+      "publication_sha256": "aafcc7ca3fb4dd5995041d36a04cdaab0e73aebea8598dd57f330a763fbfe905"
+    },
+    {
+      "path": "recovered/trace-m3v15/harness/export_mte.py",
+      "original_sha256": "cfb399bc69a353b7d4739e9a813db35451cd31f27067a7398add9242fbbf2d0e",
+      "publication_sha256": "97a8c8a4eb2e5ebae0b8148c53dac61e1a36607fe40ce4e1f8635901727e8152"
+    },
+    {
+      "path": "recovered/trace-m3v15/harness/preflight.py",
+      "original_sha256": "44decf82398083d7a840004dbf36573d58faaf8e30a8e3ed0002e70aba82aec4",
+      "publication_sha256": "893b1c1034de0f0a4f3db76051388572f31f24d9406fa0a611326559fb316e0f"
+    },
+    {
+      "path": "recovered/trace-m3v15/harness/run_cases.py",
+      "original_sha256": "e3c5390ce30f2743f7500506a53339a13125fe1587f145a1c2935e9bfe9c0e02",
+      "publication_sha256": "47cda80c4a9c5ae6f8d4de9a9bdf6fae8edd006a2d584a875df2ee31c22f781a"
+    },
+    {
+      "path": "recovered/trace-m3v15/parent_admission_watch.py",
+      "original_sha256": "9825595ec24405b530958e6e987c25fc6bb90ea99ca3059b44e3a977ce7827ed",
+      "publication_sha256": "fb4c5afc50053b7bb89bf25373f358a4126a1db0f7031c49c84a6b188932adc3"
+    },
+    {
+      "path": "recovered/trace-native/engine-native.json",
+      "original_sha256": "8aa395c6bd9448529095fb7a55bc6b35b41a8d5abc9ae58e88fb39bbf0f2ea46",
+      "publication_sha256": "982d02abd84bbbe355c5ef9286d095e0a4cc0a6c3fbd0b72a21e5f415da0e340"
+    },
+    {
+      "path": "recovered/trace-native/harness/controller.py",
+      "original_sha256": "995275d0058b3b6ab773b4346d3f9de8e8a34e141966fa86a470c7a3887ff943",
+      "publication_sha256": "54361beffe89da3f0e2a5a49f175d0ffc428d0c6025dac4c1b4ca3150bc44979"
+    },
+    {
+      "path": "recovered/trace-native/harness/export_compare.py",
+      "original_sha256": "449ad1ab240cb4b61490b45b29c70b51d6c848e298ddf519971d65891a8b39fd",
+      "publication_sha256": "fe2355f08451348c916af27201fa2a64e045acd73f1c9b448fe94a4da2fa5513"
+    },
+    {
+      "path": "recovered/trace-native/harness/export_mte.py",
+      "original_sha256": "ee8f6c8ebf17c06ed67ab95f512b19b820a99318a1ddd4b1f9eff94368dbec3b",
+      "publication_sha256": "2915bef42028017e59057faf4cbe5a3f9c1f8d7b85a249aea5082348eed15893"
+    },
+    {
+      "path": "recovered/trace-native/harness/preflight.py",
+      "original_sha256": "86934e7c94ac05986c78d42cd9344ad7b6c5d579c84ba865c2eeba85a5fedd27",
+      "publication_sha256": "59ee145ecd0c8c636119fcf8e36261c96b58213be119a381f511c6813babb3bd"
+    },
+    {
+      "path": "recovered/trace-native/harness/run_cases.py",
+      "original_sha256": "6460b1680b2633cde87c1234214bdf28e23f3bd97b81b5b16ca035a1d88b1a7e",
+      "publication_sha256": "ab20b98f1093f8c8dc968d2f2e74b25323a0adab57c8b6a92dfa7d07d3a6714f"
+    },
+    {
+      "path": "recovered/trace-native/parent_admission_watch.py",
+      "original_sha256": "be08fbf98ff71a9b633952d48aa88f8f684a9940e209bd840bd7569bd848c9de",
+      "publication_sha256": "f76cf73479ce7ade749dc41813a4c2436a1ca800724e6e8b062c86ae73a22126"
+    },
+    {
+      "path": "references/container-provenance.json",
+      "original_sha256": "e4cdd71e159b1f75c26b359b150e386ba591b1236ec5e61f1384bbe422277eca",
+      "publication_sha256": "37e0e853d365085ab7b2a3277407ed347b659e9d3ce5f3334d11ba848fb9a94d"
+    },
+    {
+      "path": "references/source-identities.json",
+      "original_sha256": "39e6ec52ee8d84dbdafaf0ac82e544894926409a6cffe5d0236c86423cef1ea1",
+      "publication_sha256": "71ff9e6c5e4decb30e89052ae567cd4eb4db8d0083400a3198454191c3febe54"
+    },
+    {
+      "path": "sdk/base/handoff-matching-pair-v2.json",
+      "original_sha256": "41a9d5a5188d906a5c2d7ce48ca9aaeb7db961aea6f22c1eb9b53096fc7ecdf2",
+      "publication_sha256": "384b590945170ed3b73cf014aa2c63cade805f15ea21bb0994729f9a4601ffd1"
+    },
+    {
+      "path": "sdk/base/matching_pair_source_v2.tar.gz",
+      "original_sha256": "f0d96459a45b1eabb5ae5e2ecd208023aa74f1d45ac3add1e001b64e94133c92",
+      "publication_sha256": "a93b02bb537674fe2a672f098edb2d9ff05301bc7eac1555d92bd46beab23dca"
+    },
+    {
+      "path": "sdk/sdk17-optin-delivery-v1/HANDOFF.json",
+      "original_sha256": "526ed120b218806da21cb0f423657af45d2efa0865b87b94ee5e491cd5b05c5e",
+      "publication_sha256": "5ef71145386456409ebe79f78980e64bbab34d5da07b448bede8b14e7ec678e6"
+    },
+    {
+      "path": "sdk/sdk17-optin-delivery-v1/common/stage_verified_matching_v2.py",
+      "original_sha256": "5a0fc78366087e3affcd00df7583ca6e3943583593422453f4c146b464d962e0",
+      "publication_sha256": "56093162ca5ac5c2d2f994ab8e59ae4fe28af749823600d820b154e344335236"
+    },
+    {
+      "path": "tests/test_prepare_run.py",
+      "original_sha256": "b1bb5a9ee76f12722764c19326c345068a2a79fa7d2e3d678b0ea9fdb07f972c",
+      "publication_sha256": "7bf95ff10fdd103eac665d1294e47057e281f5e4059f3de18570bc7dd9e9bf19"
+    },
+    {
+      "path": "tools/prepare_run.py",
+      "original_sha256": "a1c756a4b78d5deac8ab3b2d28fe399effd0d6c436209bed2d512026046b5157",
+      "publication_sha256": "ab25d7b2f4ea36b91a4d6797ee0aa3fbe28afbb450ad5e5cc835255674851b28"
+    }
+  ],
+  "whitespace_policy": "Only the recovered handoff redundant EOF blank line is trimmed. The frozen SDK unified diff remains byte-identical; its exact repository path has whitespace=-blank-at-eol because a single-space context marker represents an empty source line."
+}

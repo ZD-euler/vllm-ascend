@@ -1,0 +1,3 @@
+# Explicit reproduction-tool dependency; observed in local canonical extraction environment on 2026-11-10.
+# Not claimed to be the historical target venv's installed version.
+pyarrow==21.0.0

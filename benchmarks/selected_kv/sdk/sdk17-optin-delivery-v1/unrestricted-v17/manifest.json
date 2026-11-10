@@ -1,0 +1,26 @@
+{
+  "schema": "MMC_optin_unrestricted_DRAM_v17",
+  "files": {
+    "src/memcache/csrc/config/mmc_config_const.h": {
+      "base_sha256": "c0af4c0b91d05d6051be520eed1dfa0d04caff1fbea9d999983bd2c09c618f4d",
+      "candidate_sha256": "8a7c036c50fb7596d7515c1944070832223dd199e05076655dc69b5e0406758f"
+    },
+    "src/memcache/csrc/config/mmc_configuration.h": {
+      "base_sha256": "b85d9cbc5720ca54dcf85dd491e3a193fe696bb88999912f5d86f0b843b3c9c1",
+      "candidate_sha256": "31ceace43955d90840b4f7a3b81904384b89bb4f86151d67d42bd582ff2fe700"
+    },
+    "docs/zh/memcache_config.md": {
+      "base_sha256": "315db075469093b2219d70361f5ac298e91cd4fa9e4008dc6968252de75256f3",
+      "candidate_sha256": "d993225b3b9a7fca2c3c96bfca702234b76400a39a60ca59446f722e9442376c"
+    },
+    "test/ut/testcase/memcache/csrc/config/test_mmc_configuration.cpp": {
+      "base_sha256": "359eacb2ec18bef8a112de05d8d4caaa9f8db33e4016c005ff296d1d2c2b9e65",
+      "candidate_sha256": "73e3f7ed76be5cd2704d5e844a335815ccc7574196ac105cb114b7834598a24b"
+    }
+  },
+  "default_enabled": false,
+  "existing_struct_layouts_unchanged": true,
+  "MF_modified": false,
+  "NPU_qualified": false,
+  "caveat": "MF ordinary-DDR branch ignores NUMA flag bits; actual placement is not pinned to node0."
+}

@@ -1,0 +1,52 @@
+{
+  "model": "/repro/reference-root/m2_close_perf_20261027/model6-c8-owned-v1",
+  "trust_remote_code": true,
+  "tensor_parallel_size": 2,
+  "data_parallel_size": 2,
+  "enable_expert_parallel": true,
+  "enforce_eager": true,
+  "enable_prefix_caching": true,
+  "dtype": "bfloat16",
+  "kv_cache_dtype": "int8",
+  "quantization": "ascend",
+  "max_model_len": 528385,
+  "max_num_batched_tokens": 6144,
+  "max_num_seqs": 1,
+  "num_gpu_blocks_override": 4609,
+  "gpu_memory_utilization": 0.88,
+  "seed": 1024,
+  "block_size": 128,
+  "scheduler_reserve_full_isl": false,
+  "async_scheduling": false,
+  "additional_config": {
+    "enable_fused_mc2": 0,
+    "enable_mlapo": false,
+    "ascend_log_path": "/repro/reference-root/m3v15_q4k_chunk6k_20261107/smoke4-input-v2/runs/m3v9/logs",
+    "enable_flashcomm1": false,
+    "enable_dsa_cp": false,
+    "enable_balance_scheduling": false,
+    "selected_kv_config": {
+      "enabled": true
+    },
+    "runtime_config_path": "/repro/reference-root/m3v15_q4k_chunk6k_20261107/smoke4-input-v2/runtime/config/runtime_config.json",
+    "runtime_report_dir": "/repro/reference-root/m3v15_q4k_chunk6k_20261107/smoke4-input-v2/runtime/report",
+    "runtime_dump_dir": "/repro/reference-root/m3v15_q4k_chunk6k_20261107/smoke4-input-v2/runtime/dump"
+  },
+  "attention_config": {
+    "indexer_kv_dtype": "int8"
+  },
+  "kv_transfer_config": {
+    "kv_connector": "AscendStoreConnector",
+    "kv_role": "kv_producer",
+    "kv_connector_extra_config": {
+      "backend": "memcache",
+      "use_layerwise": true,
+      "load_async": false,
+      "layerwise_num_shared_buffers": 2,
+      "layerwise_independent_layers": []
+    },
+    "engine_id": "m3cmp-m3v9"
+  },
+  "disable_log_stats": true,
+  "enable_chunked_prefill": true
+}

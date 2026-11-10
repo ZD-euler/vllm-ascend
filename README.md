@@ -1,3 +1,13 @@
+# M3v15 个人复现实验入口
+
+个人 fork：[ZD-euler/vllm-ascend](https://github.com/ZD-euler/vllm-ascend)，分支 `feat/dsa-prefill-ondemand-m3v15`。
+
+复现工具、配置和中文说明见 [benchmarks/selected_kv/START_HERE_ZH.md](benchmarks/selected_kv/START_HERE_ZH.md)。
+默认只运行 M3v15；native 对照需要显式启用并使用固定 baseline 的外部 Git worktree。
+源码来源、已完成 CPU 验证与未执行的新构建/NPU 测试见目录内说明。本分支增加复现材料，不改变生产数学代码。
+
+---
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vllm-project/vllm-ascend/main/docs/source/logos/vllm-ascend-logo-text-dark.png">

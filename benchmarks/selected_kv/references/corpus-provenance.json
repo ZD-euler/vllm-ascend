@@ -1,0 +1,1114 @@
+{
+  "schema_version": 1,
+  "manifest_sha256": "d1d3931cc5807b57f1321dd2fc4f8956090f7b1e18b3187bdb73bfeb27e4d287",
+  "synthetic_padding_tokens": false,
+  "sources": [
+    {
+      "task_name": "solana-data",
+      "glm52_tokens": 63341,
+      "tokens_sha256_uint32_le": "b52e7b67be94609b647d7279a4f0a4276c5dec647c0b521c03a743e4613ed97f",
+      "agent": "Terminus2",
+      "canonical_file": "solana-data.txt",
+      "canonical_sha256": "6f2d96c427de73e3173782946036f2de01d1feddebe6cd72fa0a44f273836a5b",
+      "sha256": "437df85730a6de1652978d3221b96b35f686c76c8069ad6c3d94d8e5a403f199",
+      "solved": null,
+      "traj_id": "terminus2-OpenAI__GPT-5-solana-data-e5980a09",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-solana-data-e5980a09.tar.zst",
+      "token_file_name": "solana-data.tokens.json",
+      "token_file_sha256": "159f5d5dbcf5b86f04436fded12671994c0d23f72a5f538a310adedb68ca51fb",
+      "token_file_bytes": 347054
+    },
+    {
+      "task_name": "port-compressor",
+      "glm52_tokens": 81968,
+      "tokens_sha256_uint32_le": "cba0f0a81e0b2dfb18c412ac9aace79f7231621508e1cb8aa0c879b7cc4e839e",
+      "agent": "Terminus2",
+      "canonical_file": "port-compressor.txt",
+      "canonical_sha256": "ba8e7ac63efe633e1160a6d6e12f0c3cb49111af4e4cec8752767f357032b2c6",
+      "sha256": "cd60ef367603670d722d01e3aa02c245e5e4b32964fd9abf97d48da8735ee613",
+      "solved": null,
+      "traj_id": "terminus2-OpenAI__GPT-5-port-compressor-a916ad03",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-port-compressor-a916ad03.tar.zst",
+      "token_file_name": "port-compressor.tokens.json",
+      "token_file_sha256": "600b859d1ba9e0d226fac40e2669d232f1099010851cee1767f0be84e51d1c63",
+      "token_file_bytes": 452360
+    },
+    {
+      "task_name": "add-benchmark-lm-eval-harness",
+      "glm52_tokens": 52651,
+      "tokens_sha256_uint32_le": "c6e914c6b8bfac96ed7297c64a2992048cf23158ad1163218363220f37eec660",
+      "agent": "Terminus2",
+      "canonical_file": "add-benchmark-lm-eval-harness.txt",
+      "canonical_sha256": "b4a81e630e44926da8216205d3d834920878a32afd1eb0bf0212b181d10e1f8b",
+      "sha256": "60fa93986b8039ea37f821667cff4a7c4d3621692a645a53ab369730b9dc173e",
+      "solved": null,
+      "traj_id": "terminus2-OpenAI__GPT-5-add-benchmark-lm-eval-harness-1f231d3c",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-add-benchmark-lm-eval-harness-1f231d3c.tar.zst",
+      "token_file_name": "add-benchmark-lm-eval-harness.tokens.json",
+      "token_file_sha256": "fd29411eeeb091b9c4506797175021771d8de8ba6f72216087e7bcda5f770929",
+      "token_file_bytes": 285421
+    },
+    {
+      "task_name": "3d-model-format-legacy",
+      "glm52_tokens": 115320,
+      "tokens_sha256_uint32_le": "d142b96e35bf63fd6f73756a8bb3210d3e3be57bfa0c35603ac5d7b71b222f7e",
+      "agent": "Terminus2",
+      "canonical_file": "3d-model-format-legacy.txt",
+      "canonical_sha256": "fa7d8b5dce33bec14e4e1a27e97a20a8742c9de89dd43e58d4153af63dd27329",
+      "sha256": "6bcd7e8429d3e2f0c41d1692cb2aa277ce4257932c0596b1924c71b4812237f3",
+      "solved": null,
+      "traj_id": "terminus2-OpenAI__GPT-5-3d-model-format-legacy-79cf6d53",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-3d-model-format-legacy-79cf6d53.tar.zst",
+      "token_file_name": "3d-model-format-legacy.tokens.json",
+      "token_file_sha256": "816cc90e209a9af84ac94293b3497397e3198226914e9b46e892f1e591da1918",
+      "token_file_bytes": 641786
+    },
+    {
+      "task_name": "schemelike-metacircular-eval",
+      "glm52_tokens": 202379,
+      "tokens_sha256_uint32_le": "24f484273fe3223eac0fcf5daa902d147e86aac92b412af13183fe88991d1b6a",
+      "agent": "OpenHands",
+      "canonical_file": "schemelike-metacircular-eval.txt",
+      "canonical_sha256": "30c2357d0d6c5b00d04e303da9955fb245d1042d3b4893a33518da890dbe5bda",
+      "sha256": "8b6fc373bef8b8d273e4afd9ddeb3023104f041ab6da449bbdb103c1914c1431",
+      "solved": null,
+      "traj_id": "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-schemelike-metacircular-eval-6b87c8fa",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-schemelike-metacircular-eval-6b87c8fa.tar.zst",
+      "token_file_name": "schemelike-metacircular-eval.tokens.json",
+      "token_file_sha256": "f5c16628b2dfcaabf8d0eb9ffee42b3019df3ffc22c16507349c3f15dd1d8a26",
+      "token_file_bytes": 1104448
+    },
+    {
+      "task_name": "polyglot-rust-c",
+      "glm52_tokens": 118740,
+      "tokens_sha256_uint32_le": "3eba5f4768ed15927e41bfa0ea8e8be69db1dca31772c406ce7873d3b3b682a0",
+      "agent": "OpenHands",
+      "canonical_file": "polyglot-rust-c.txt",
+      "canonical_sha256": "2a6d6e95baa59b63d937a484cccffc3e3fca3fda765f550eb1864cb622b4da17",
+      "sha256": "a58453e04089f07d446d03d784f4f2abba29c92cd3d25068c0a030efcb18fc83",
+      "solved": null,
+      "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-polyglot-rust-c-4df91451",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-polyglot-rust-c-4df91451.tar.zst",
+      "token_file_name": "polyglot-rust-c.tokens.json",
+      "token_file_sha256": "5218066013f6437a6b65277c7fc0459931f01a06828c709005b584d285126e00",
+      "token_file_bytes": 643092
+    },
+    {
+      "task_name": "fix-ocaml-gc",
+      "glm52_tokens": 723580,
+      "tokens_sha256_uint32_le": "85109a60a1566c316d8e433b1f8fed9cd9a1e7875d96b9707e04b8c54a17b3b5",
+      "agent": "OpenHands",
+      "canonical_file": "fix-ocaml-gc.txt",
+      "canonical_sha256": "c46170ef9d3300e4b5d48aa4644a0ed899c99196cf680315022ae2438ae6586a",
+      "sha256": "51ef88aa6eacf762e22f70d0ca61835f9afef31a6ee1093e13978d2db760cfde",
+      "solved": null,
+      "traj_id": "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-fix-ocaml-gc-96d6a796",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-fix-ocaml-gc-96d6a796.tar.zst",
+      "token_file_name": "fix-ocaml-gc.tokens.json",
+      "token_file_sha256": "5441c5376199263278dbb31e39a7fa71f215b3d17f785f3e3a35a95bbb8232db",
+      "token_file_bytes": 4289689
+    },
+    {
+      "task_name": "reverse-engineering",
+      "glm52_tokens": 334355,
+      "tokens_sha256_uint32_le": "34383a874d5668b77df52a801b235ca46f555bbaaa46663891dec507392176e5",
+      "agent": "OpenHands",
+      "canonical_file": "reverse-engineering.txt",
+      "canonical_sha256": "ca035ad46de4506ea1935a90354cbc0d37b0d8087cf72ff0e5a521c78cee3803",
+      "sha256": "389a9e17887e8b13295b4d84a18f97c9f3bfbb79ac5677cd5644e980d6cdfc6c",
+      "solved": null,
+      "traj_id": "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-reverse-engineering-885a06d5",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-reverse-engineering-885a06d5.tar.zst",
+      "token_file_name": "reverse-engineering.tokens.json",
+      "token_file_sha256": "4619cc9e35236fd6ad7321b0fd7daf5e6ff88ab69beac28f33ecb8dc6c5acce5",
+      "token_file_bytes": 1899913
+    },
+    {
+      "task_name": "get-bitcoin-nodes",
+      "glm52_tokens": 45997,
+      "tokens_sha256_uint32_le": "c57e1ae01b7ee50f6d90266084420fcda6f12537200b55e3b11ade0016aec431",
+      "agent": "Terminus2",
+      "canonical_file": "get-bitcoin-nodes.txt",
+      "canonical_sha256": "cac13bd1158ee649b7c0a42286cc54b6fc6988c36c55874cbe52e95a797dc8a5",
+      "sha256": "39b88cdaf1adfddf8897daf64e8f232848abc384136f7b0a2d8c991acc3f1445",
+      "solved": true,
+      "traj_id": "terminus2-DeepSeek__DeepSeek-V3.2-get-bitcoin-nodes-081db50d",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-DeepSeek__DeepSeek-V3.2-get-bitcoin-nodes-081db50d.tar.zst",
+      "token_file_name": "get-bitcoin-nodes.tokens.json",
+      "token_file_sha256": "f182d106572e990baca459db8830282bfb07b78c1bd07ace50f35840e2616c56",
+      "token_file_bytes": 253276
+    },
+    {
+      "task_name": "cross-entropy-method",
+      "glm52_tokens": 31195,
+      "tokens_sha256_uint32_le": "c291afaf4cfbe309a777718c65465250ae3173cc0322ce0728caf836d4e65234",
+      "agent": "Terminus2",
+      "canonical_file": "cross-entropy-method.txt",
+      "canonical_sha256": "cbd19e21974c340c7de98cec2c1d18d49d7602bda5806b3bb401ff13cfdd0684",
+      "sha256": "06ec482f6645bbb877d500ff0fa7acb8f65af4012827894eaba42421cf89ca8b",
+      "solved": true,
+      "traj_id": "terminus2-OpenAI__GPT-5-cross-entropy-method-ff12e6cc",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-cross-entropy-method-ff12e6cc.tar.zst",
+      "token_file_name": "cross-entropy-method.tokens.json",
+      "token_file_sha256": "17c728cf3303d1fb149cfc95b994f6a0fcc1058c45dac648fdb08cdc17c998e2",
+      "token_file_bytes": 173503
+    },
+    {
+      "task_name": "wasm-pipeline",
+      "glm52_tokens": 27901,
+      "tokens_sha256_uint32_le": "789dc292b7a1f54756795f6c7832e5d7c9c9a942e476f67f8e83f570c10f2b0e",
+      "agent": "Terminus2",
+      "canonical_file": "wasm-pipeline.txt",
+      "canonical_sha256": "8bddf28145a44a633af8dd97ae2c077f254508c8fdbae521fc8cc8cd2e1f56fe",
+      "sha256": "d6b178576e8872147b6c2741baed2f9123351e4ec35b5c49b060f353ac5b0607",
+      "solved": true,
+      "traj_id": "terminus2-DeepSeek__DeepSeek-V3.2-wasm-pipeline-0d31d36b",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-DeepSeek__DeepSeek-V3.2-wasm-pipeline-0d31d36b.tar.zst",
+      "token_file_name": "wasm-pipeline.tokens.json",
+      "token_file_sha256": "5319510de600f75912b4ce18c44a86fe863d83fac5a21f22f6f8c755d6a89c64",
+      "token_file_bytes": 154743
+    },
+    {
+      "task_name": "cobol-modernization",
+      "glm52_tokens": 21721,
+      "tokens_sha256_uint32_le": "5ff63320874f26d738f990bfcff51d90864eda0d16dbf5a069550f8994b6b5b8",
+      "agent": "Terminus2",
+      "canonical_file": "cobol-modernization.txt",
+      "canonical_sha256": "123eb5717d6215bfd810cf1d2b0200c3c66a91b6729d2c94c7cda3d1374a5a82",
+      "sha256": "ccc24bd3cc7542077fc4f64a890037901c310ed8423f35bba57c67fa5e9c8b4d",
+      "solved": true,
+      "traj_id": "terminus2-DeepSeek__DeepSeek-V3.2-cobol-modernization-9a3a9e4f",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-DeepSeek__DeepSeek-V3.2-cobol-modernization-9a3a9e4f.tar.zst",
+      "token_file_name": "cobol-modernization.tokens.json",
+      "token_file_sha256": "056ccef8b62f62f2c360ec3297ef832b3a6051df1f4dc9e259c6bb85ac278b87",
+      "token_file_bytes": 119745
+    },
+    {
+      "task_name": "pypi-server",
+      "glm52_tokens": 34468,
+      "tokens_sha256_uint32_le": "541d1569e3aa6c51c246e61236f74b8b0ca9614221ebee3690e951b57d52a678",
+      "agent": "Terminus2",
+      "canonical_file": "pypi-server.txt",
+      "canonical_sha256": "4c68dec087825f13b9229d7ffdb0bc635288757b75ba78a8fbefe4ef147aa09f",
+      "sha256": "979d5695a3ddc31a5a7ebfb9c1e88d4e5d85365883882b2e0998901bfd136b4d",
+      "solved": true,
+      "traj_id": "terminus2-Qwen__Qwen3-Coder-480B-A35B-Instruct-pypi-server-03e4faa2",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-Qwen__Qwen3-Coder-480B-A35B-Instruct-pypi-server-03e4faa2.tar.zst",
+      "token_file_name": "pypi-server.tokens.json",
+      "token_file_sha256": "6122e58eed59f6357375d54448019af3133ee9d02e20fb13824e2fbac8dc3e74",
+      "token_file_bytes": 190948
+    },
+    {
+      "task_name": "huggingface__transformers-27463",
+      "glm52_tokens": 109087,
+      "tokens_sha256_uint32_le": "7618029715296433b5ea5a2dc7ced0df97c48b28f6b8c709202debf11c20d0ba",
+      "agent": "OpenHands",
+      "canonical_file": "huggingface__transformers-27463.txt",
+      "canonical_sha256": "b3a608d923111a27d8acb81427f619d15a6501fa637b523f512b6a9c852d7335",
+      "sha256": "8046c12884ff5ce1f798935697f9db5136b568b1d9be291d5fa19e9f69e94823",
+      "solved": true,
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-27463-9129234e",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-OpenAI__GPT-5-huggingface__transformers-27463-9129234e.tar.zst",
+      "token_file_name": "huggingface__transformers-27463.tokens.json",
+      "token_file_sha256": "9239c82180b765e64fc61214a47dba984f5e77ad0ef75a2a9688da9f94a79ff3",
+      "token_file_bytes": 616874
+    },
+    {
+      "task_name": "build-pmars",
+      "glm52_tokens": 15323,
+      "tokens_sha256_uint32_le": "031004c483310a62d3bd753bdf24719fc666d3943f601163099c1230668da423",
+      "agent": "Terminus2",
+      "canonical_file": "build-pmars.txt",
+      "canonical_sha256": "e5acb234c4a8788f91d544057ff91d78bf5e418bf140760649ea3ff9da4905a3",
+      "sha256": "37d9a65fd1254a070c5679c5526b81898082844ad632e86d12cb0966bfc4f6e7",
+      "solved": true,
+      "traj_id": "terminus2-OpenAI__GPT-5-build-pmars-b132c470",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-build-pmars-b132c470.tar.zst",
+      "token_file_name": "build-pmars.tokens.json",
+      "token_file_sha256": "c26212f4f7c745bdf0c754e25859f02dcf6ce5eed9a4d9a722c6d0d52358a8da",
+      "token_file_bytes": 84701
+    },
+    {
+      "task_name": "instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan",
+      "glm52_tokens": 77292,
+      "tokens_sha256_uint32_le": "94b55f805c6754cd7ee7a3453c4b85596db8af878869a84d0ce2ffce7828e780",
+      "agent": "OpenHands",
+      "canonical_file": "instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan.txt",
+      "canonical_sha256": "926bdb38a57f632651fed3b99ad9a798d96f5aa436e7046a66aac28987ddd360",
+      "sha256": "958d1648e39bac1255d5c0a0c48568c4a5644e00b7032c69e8de82f776a7466c",
+      "solved": true,
+      "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan-450efae7",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-OpenAI__GPT-5-instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan-450efae7.tar.zst",
+      "token_file_name": "instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan.tokens.json",
+      "token_file_sha256": "4179a3efc92dd6d220612e492bb7ce7902d2b0aa97c7a797622c1f23b9c49d2e",
+      "token_file_bytes": 434831
+    }
+  ],
+  "cases": [
+    {
+      "case": "h65536-q128-t2048",
+      "history": 65536,
+      "query": 128,
+      "total_query_tokens": 2048,
+      "requests": 16,
+      "windows": [
+        {
+          "task": "port-compressor",
+          "start_token": 0,
+          "token_sha256": "0462dcfd3a65f2d11ba63fad59926020410e61c4dcb995e3621da89cded83663",
+          "stop_token": 65664
+        },
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 0,
+          "token_sha256": "3b4493684a91f37fa3bad1b44a219fcfca259a31c6f6f297bd59d728b69b1066",
+          "stop_token": 65664
+        },
+        {
+          "task": "huggingface__transformers-27463",
+          "start_token": 0,
+          "token_sha256": "38b1541e756352c691fe88ee0fdc2cac30066ac30ebb9b85366cb61da88be2d2",
+          "stop_token": 65664
+        },
+        {
+          "task": "port-compressor",
+          "start_token": 12416,
+          "token_sha256": "fc78b6b6a7b61520e624d6bddf61a0cd81500c867a1db9dc17bc6c76ae774a18",
+          "stop_token": 78080
+        },
+        {
+          "task": "3d-model-format-legacy",
+          "start_token": 12416,
+          "token_sha256": "d9f0164b84d72cb5b490073a455ce02fe573f17a27b1e315b1cb13448d732bad",
+          "stop_token": 78080
+        },
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 12416,
+          "token_sha256": "4af75008afb239d12d73260c6b7dfae88c3bc85e53faf9bbc0b3f9a7ae81d037",
+          "stop_token": 78080
+        },
+        {
+          "task": "polyglot-rust-c",
+          "start_token": 12416,
+          "token_sha256": "7147418a7a6392cfcbe0c1e538e1b74f46c468a6f5b4dd28cdf14ef34a99b632",
+          "stop_token": 78080
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 12416,
+          "token_sha256": "15e593dc55c71fa34fecb50e79eb7c356cb7a7f3d906698ef752ea6c4e604763",
+          "stop_token": 78080
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 12416,
+          "token_sha256": "6a340bfc41d05bbfef5eae3fcee389e1f9aa2e2cbc778fd55439dcbafe03c475",
+          "stop_token": 78080
+        },
+        {
+          "task": "huggingface__transformers-27463",
+          "start_token": 12416,
+          "token_sha256": "e0166d477316b7120ad868f8c78e96297e1081214329dc52c0109ed64f1f0bd5",
+          "stop_token": 78080
+        },
+        {
+          "task": "instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan",
+          "start_token": 768,
+          "token_sha256": "c433ab71a5fc2b600a6318a2ce416ddd96cab55905ff4f2104c4a20054521574",
+          "stop_token": 66432
+        },
+        {
+          "task": "port-compressor",
+          "start_token": 8448,
+          "token_sha256": "ae752769a8075d94221ad651bb4e14e5fd92561c602179c9917f5555077d7a0f",
+          "stop_token": 74112
+        },
+        {
+          "task": "3d-model-format-legacy",
+          "start_token": 24832,
+          "token_sha256": "329a7e7bc94b624f9ae63c528d4d26d6cdfd2f807a5aa983b07b4ec8032ce39a",
+          "stop_token": 90496
+        },
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 24832,
+          "token_sha256": "5ab8bae6888000e1d395eef5be4d68477440ed8c1aaa506110021db4bf39f6ad",
+          "stop_token": 90496
+        },
+        {
+          "task": "polyglot-rust-c",
+          "start_token": 24832,
+          "token_sha256": "2ed248147eb671dc144693ef5bc0c0c35ac8332496678711335d681bd47707f9",
+          "stop_token": 90496
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 24832,
+          "token_sha256": "1a38dd2e1b992c66b7f9a1f6d0b42ec6250ba15fe961fd1b028294a5e440c3bd",
+          "stop_token": 90496
+        }
+      ]
+    },
+    {
+      "case": "h65536-q256-t2048",
+      "history": 65536,
+      "query": 256,
+      "total_query_tokens": 2048,
+      "requests": 8,
+      "windows": [
+        {
+          "task": "port-compressor",
+          "start_token": 13568,
+          "token_sha256": "a919d3133c053f222a390b8dbe5333d1de7167c85c0457fee7fa2a67f4475b56",
+          "stop_token": 79360
+        },
+        {
+          "task": "3d-model-format-legacy",
+          "start_token": 13568,
+          "token_sha256": "c183d826c3b73ef5fe5684efbb7b68fa4fbe063396e24be66bbe3e4ecd1641a0",
+          "stop_token": 79360
+        },
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 13568,
+          "token_sha256": "1a627db61a61d384b3224a7bfa5931bc4fe6099b84e64da0015bcd006c55fd83",
+          "stop_token": 79360
+        },
+        {
+          "task": "polyglot-rust-c",
+          "start_token": 13568,
+          "token_sha256": "ebb6e3ad89d72bbae9c652d1e2db3c92bf777e282209b82bdcb392be5030c22e",
+          "stop_token": 79360
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 13568,
+          "token_sha256": "c79cf1ac4cf62a41529ed2b6f96c41f1af901a3215c5ba9205c5fd85accadf59",
+          "stop_token": 79360
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 13568,
+          "token_sha256": "0e32d6144876c5db683452bc0a2160e30bf35d6bca1ec183e5d93c98ae5fada9",
+          "stop_token": 79360
+        },
+        {
+          "task": "huggingface__transformers-27463",
+          "start_token": 13568,
+          "token_sha256": "85cc5f7a9ed211ac487c528ac2228332cfd0ed3f712bdbc6e3a6b8df56301593",
+          "stop_token": 79360
+        },
+        {
+          "task": "instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan",
+          "start_token": 2048,
+          "token_sha256": "af299def08cfc3b4bec4ef28e7e35e26dfc0978b314cac60cee942d508d7651a",
+          "stop_token": 67840
+        }
+      ]
+    },
+    {
+      "case": "h65536-q512-t2048",
+      "history": 65536,
+      "query": 512,
+      "total_query_tokens": 2048,
+      "requests": 4,
+      "windows": [
+        {
+          "task": "port-compressor",
+          "start_token": 11136,
+          "token_sha256": "84a506eaafd72fa2882bfca21d5b4f85b8f59f21cd40d351d2ee4f2f2c3aa4e3",
+          "stop_token": 77184
+        },
+        {
+          "task": "3d-model-format-legacy",
+          "start_token": 27136,
+          "token_sha256": "658f70bac3472811dc7a9f2ffa7f3caff18c7780d5a7d63167f9fdee0538e7db",
+          "stop_token": 93184
+        },
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 27136,
+          "token_sha256": "a09d72104e3290859578a0f63dd5bc30447a63fe318976f1aeab1921d0c1e8a9",
+          "stop_token": 93184
+        },
+        {
+          "task": "polyglot-rust-c",
+          "start_token": 27136,
+          "token_sha256": "d7558d80d36c0dfb4d1b7f8c95fe4b46701d82de150fec17d513367c443996f2",
+          "stop_token": 93184
+        }
+      ]
+    },
+    {
+      "case": "h65536-q1024-t2048",
+      "history": 65536,
+      "query": 1024,
+      "total_query_tokens": 2048,
+      "requests": 2,
+      "windows": [
+        {
+          "task": "port-compressor",
+          "start_token": 9728,
+          "token_sha256": "c4a9bc48085f6d20252752c08c3b13fefdcab0e1845e74055a2d7df7dd105e4b",
+          "stop_token": 76288
+        },
+        {
+          "task": "3d-model-format-legacy",
+          "start_token": 40704,
+          "token_sha256": "f5faaf5b506e529f3a7fe4b366339f7ea1f510a09e57c0cd7d5d10fa5764725b",
+          "stop_token": 107264
+        }
+      ]
+    },
+    {
+      "case": "h131072-q128-t2048",
+      "history": 131072,
+      "query": 128,
+      "total_query_tokens": 2048,
+      "requests": 16,
+      "windows": [
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 54272,
+          "token_sha256": "a3ecb185f7e746fa4d33b5233beacd33e626a3372da6401740fad94cb282305d",
+          "stop_token": 185472
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 54272,
+          "token_sha256": "b14ef47ed4497ee631ef3cc392e85a035716cf88ccb568292f8ac513f8d7bf36",
+          "stop_token": 185472
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 54272,
+          "token_sha256": "fab18a6fe2bf792d4c8572901367dbe7d6d8da59cd0c8cf16a736ef829438396",
+          "stop_token": 185472
+        },
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 66688,
+          "token_sha256": "9a612d462c6432448afe7d78e7d7b73dceef5e19c68f9fcfd68257d0ae4abcc6",
+          "stop_token": 197888
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 66688,
+          "token_sha256": "99bb191a44f2ee7552a7e1d0c1b45648b8fa0ddaf15b87124da2d1054409c580",
+          "stop_token": 197888
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 66688,
+          "token_sha256": "fb748f142c43d00dcba43458439938b075c3db6248c322fa09566067de751aa9",
+          "stop_token": 197888
+        },
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 7808,
+          "token_sha256": "7c0d629eea88045e367c26325c461f2083655d07cc955ee742f64790ebe0e567",
+          "stop_token": 139008
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 79104,
+          "token_sha256": "dc70a45f10ba412876222b39a4ae59337b5ee999c3bdcc0d9983b736abc72683",
+          "stop_token": 210304
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 79104,
+          "token_sha256": "b86b426b18a8415bafdfe71d19a29e7a181a7e7b9d6f86262c547b1310f5af42",
+          "stop_token": 210304
+        },
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 20224,
+          "token_sha256": "de22c34a8ec33e48b1d9aa9768274d6e0a3777fd5bd61dc877f88c370013ba6a",
+          "stop_token": 151424
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 91520,
+          "token_sha256": "1ac3888f615af6f989183a73283c107a4615e44e97f3a81d9f321a48afbda531",
+          "stop_token": 222720
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 91520,
+          "token_sha256": "b6b866a1cc8e5de66b39aa65f74f69b30309d6a6b056e8c894db2853f238840e",
+          "stop_token": 222720
+        },
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 32640,
+          "token_sha256": "6a4a0adbd59d63c8bf0bda624c57f4b919b2ce012b52e2cf3d294702e4674065",
+          "stop_token": 163840
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 103936,
+          "token_sha256": "c1e9e27461d5f910f8ce5b519cd5a462a07e7e4f7320b4d1de721bf9c7b4bbfd",
+          "stop_token": 235136
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 103936,
+          "token_sha256": "0f9ee3dbe4ecca474018f014e97476d2fe5a204c0ead9cd3c88ec54ab375b2d2",
+          "stop_token": 235136
+        },
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 45056,
+          "token_sha256": "e0784fb8cb2374148a5376bee70dda6fd6bf93aa60ab0e1556f6ff27ea790d08",
+          "stop_token": 176256
+        }
+      ]
+    },
+    {
+      "case": "h131072-q256-t2048",
+      "history": 131072,
+      "query": 256,
+      "total_query_tokens": 2048,
+      "requests": 8,
+      "windows": [
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 67840,
+          "token_sha256": "600a5efe117ea89f4f3bc35ecfea8b7780f417fe3cfa30860f01718cdddd10dd",
+          "stop_token": 199168
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 67840,
+          "token_sha256": "131275187a91c6370f322dd27d51cd42cbeb560e810531dc987747777dce5fdd",
+          "stop_token": 199168
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 67840,
+          "token_sha256": "b75e9ff971769951ac2df1abca5d569bb5843d57aaa330d36e8dfc9bc4b960a4",
+          "stop_token": 199168
+        },
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 9088,
+          "token_sha256": "cf5c877e1b611585db7e5d9eb537580d954427a390e46bb0753ddd5a5e874e7a",
+          "stop_token": 140416
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 80256,
+          "token_sha256": "f159d5e5e77fe18280507258e73b6521ac8f590621fe854f40066373676672b9",
+          "stop_token": 211584
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 80256,
+          "token_sha256": "80d4c8496d6da2a52ef4c352ae4d9d14cdb230c68fe16e88fa149cdf18bb6bd0",
+          "stop_token": 211584
+        },
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 21504,
+          "token_sha256": "e76d1dfb3756f07e4f9bcbea4560a2280d295c5d2bbc42aa9c2acee4a2f9db8a",
+          "stop_token": 152832
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 92672,
+          "token_sha256": "c85326ef60ece3ace568e5e3b97af8513372e1608179c3293dfa56a0d5cccef7",
+          "stop_token": 224000
+        }
+      ]
+    },
+    {
+      "case": "h131072-q512-t2048",
+      "history": 131072,
+      "query": 512,
+      "total_query_tokens": 2048,
+      "requests": 4,
+      "windows": [
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 10496,
+          "token_sha256": "4d285842366367d79038d9e7d0361eed4a93debf0a5de255db1e068dbc43d9bf",
+          "stop_token": 142080
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 81408,
+          "token_sha256": "81c5d6120992c72d1dda9aa81256adb2d5a10dc5e8af6595b363f4a84f6351e1",
+          "stop_token": 212992
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 81408,
+          "token_sha256": "e120d214d0f26db441e47ec043ed9a17e7a3b1483029c07cfe758999d65bb1d5",
+          "stop_token": 212992
+        },
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 22912,
+          "token_sha256": "af109b5d14ba75cbb86857938cd86ec260ec48131d439576b8bfa946b746c2c4",
+          "stop_token": 154496
+        }
+      ]
+    },
+    {
+      "case": "h131072-q1024-t2048",
+      "history": 131072,
+      "query": 1024,
+      "total_query_tokens": 2048,
+      "requests": 2,
+      "windows": [
+        {
+          "task": "schemelike-metacircular-eval",
+          "start_token": 24576,
+          "token_sha256": "fd209376896f7baa012adb46cd8c17c580e0a945b3fdbe755e23de788e25a44e",
+          "stop_token": 156672
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 94976,
+          "token_sha256": "344b8839085123019ea49301139f6cb4e6f8682ba570a5bf71e3c4f2ba1a930d",
+          "stop_token": 227072
+        }
+      ]
+    },
+    {
+      "case": "h262144-q128-t2048",
+      "history": 262144,
+      "query": 128,
+      "total_query_tokens": 2048,
+      "requests": 16,
+      "windows": [
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 108544,
+          "token_sha256": "d196826c3cfaa52c3eef27fcef409a10beace633f6df91685ff6716839e2b1e8",
+          "stop_token": 370816
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 36352,
+          "token_sha256": "82f2e9acb822a6ce203eb50b7244ee9f53ae887c19e4123b405d2faf29b71217",
+          "stop_token": 298624
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 120960,
+          "token_sha256": "d25874ffd6883b6109aa4fc29d128e3e0751ba4da91c46f5d740a09c36ad15f5",
+          "stop_token": 383232
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 48768,
+          "token_sha256": "4c0561fcdea9ebc27f258451bbb628adb87df171a87e57e93df75b92271c47d5",
+          "stop_token": 311040
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 61184,
+          "token_sha256": "1dbd38f08ba477abc719f7fa76e29b71b91618b9c147bf71e337343564ae47bf",
+          "stop_token": 323456
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 145792,
+          "token_sha256": "1511cafc92f560165c29c9f9c02e516dee7db5e4a12cbf8d02464f8fe0cb8eba",
+          "stop_token": 408064
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 1408,
+          "token_sha256": "205029161fb936778e8354701b7951c3a8915c9598f21e2b884e6bba7f303990",
+          "stop_token": 263680
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 158208,
+          "token_sha256": "231e3e66fafbd538704d20739081d6e575423be2715ba42479b5ba05e53ec196",
+          "stop_token": 420480
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 13824,
+          "token_sha256": "a520373210113c73646b7f6337e3a24099b371da43fff5cc3fa6ff4d947d0f3f",
+          "stop_token": 276096
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 26240,
+          "token_sha256": "e01c10bfde56b2fb42e743b8601ed0acc3adcff2e52ec44aef374ce9d7704663",
+          "stop_token": 288512
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 38656,
+          "token_sha256": "f72a24efe6401c525bd12926642a5117ac2a410507a9244eae6f3e642dcdd1f7",
+          "stop_token": 300928
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 51072,
+          "token_sha256": "2c8bc256ce6ca24f6daeb59e37363fb09643ef72965d277b1c5a70a4323c07ed",
+          "stop_token": 313344
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 63488,
+          "token_sha256": "2336c3212db0b25654e31730564c5b424659275d84886942be9cc155fb53d607",
+          "stop_token": 325760
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 3712,
+          "token_sha256": "bcf72b2d279da0534a903513cf90a168fac06ebfa11e32857f735f1dd38b1a8f",
+          "stop_token": 265984
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 16128,
+          "token_sha256": "c633489e1b6b328846538655173003eedc716be9b77efe980ec7292b6b3fa2bc",
+          "stop_token": 278400
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 245120,
+          "token_sha256": "0ba13ddadd601670db0428c18c4aaf0dcd32ca79f2c13e5eb1c048d20c28fe55",
+          "stop_token": 507392
+        }
+      ]
+    },
+    {
+      "case": "h262144-q256-t2048",
+      "history": 262144,
+      "query": 256,
+      "total_query_tokens": 2048,
+      "requests": 8,
+      "windows": [
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 122112,
+          "token_sha256": "632f8e266a2759e7ce4c48be2c5210904100e11be4d2b44bd3598c458b16c0ba",
+          "stop_token": 384512
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 134528,
+          "token_sha256": "6d08d5fa4b2e398b7408ef3ec7c827a2a39ac0747593c8a2f2d0e6eb71f52ddd",
+          "stop_token": 396928
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 146944,
+          "token_sha256": "8cc0ea1dca2c13463d382e0a3970608f13121e8068cd3f337e117f882879859b",
+          "stop_token": 409344
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 2816,
+          "token_sha256": "d5e45322b7f31041872566e9e3a231a88737eaecc638e5c89dd790507f39284a",
+          "stop_token": 265216
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 15232,
+          "token_sha256": "b4f0d48d737282418a34a3d7987a24ca7c8177ca08cf857e0b6119f962d00adc",
+          "stop_token": 277632
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 27648,
+          "token_sha256": "3b9492b1eabff0bafada4a45463ae4f449b048f7055d5293ed497d8e6aee2774",
+          "stop_token": 290048
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 40064,
+          "token_sha256": "6ee6399a55ce51ed0667f472253f6bfdaef50aeaea6453a8f991e2a48352d09c",
+          "stop_token": 302464
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 196608,
+          "token_sha256": "f0dd18c4b7962ab10a439342304090043af09750dc0856add7c1e9f3991fc153",
+          "stop_token": 459008
+        }
+      ]
+    },
+    {
+      "case": "h262144-q512-t2048",
+      "history": 262144,
+      "query": 512,
+      "total_query_tokens": 2048,
+      "requests": 4,
+      "windows": [
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 135680,
+          "token_sha256": "4ae30543b20d1ec7f0c35e425087ccb26c4f284d1f11d3ef957dc1c5fc9c3c89",
+          "stop_token": 398336
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 63872,
+          "token_sha256": "f0dbc47e01776ecb181c14b4f09a7d99c54dae72f54772dbc0bce36e0c5888b3",
+          "stop_token": 326528
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 4480,
+          "token_sha256": "2f7aa27bf8e66c7c9e246ea64ca1052b3f64af2c3873662168f11d77ea5f4e24",
+          "stop_token": 267136
+        },
+        {
+          "task": "reverse-engineering",
+          "start_token": 16896,
+          "token_sha256": "00a13ce45d45c58b5cc115d7303cf0886e013a968bc05f81dc017c07c95bb39f",
+          "stop_token": 279552
+        }
+      ]
+    },
+    {
+      "case": "h262144-q1024-t2048",
+      "history": 262144,
+      "query": 1024,
+      "total_query_tokens": 2048,
+      "requests": 2,
+      "windows": [
+        {
+          "task": "reverse-engineering",
+          "start_token": 6656,
+          "token_sha256": "141d3adb07f352f4b36338594f7c7e6f41dddb91a8181d8d8a504549cbd58d98",
+          "stop_token": 269824
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 161664,
+          "token_sha256": "265b3ee90462defdc03df792d2c1c6de506790e0adfb8d5ecfe179fab1b31843",
+          "stop_token": 424832
+        }
+      ]
+    },
+    {
+      "case": "h524288-q128-t2048",
+      "history": 524288,
+      "query": 128,
+      "total_query_tokens": 2048,
+      "requests": 16,
+      "windows": [
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 175232,
+          "token_sha256": "32c13e1f2c1f04596d9d63f849627b5aad8a050225ed2ed08fa4ebaa85efdd8f",
+          "stop_token": 699648
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 896,
+          "token_sha256": "e8e5ee3ce2f82182ebdb19cace354debfd79b3eef05aa64737781a8446ab48d1",
+          "stop_token": 525312
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 13312,
+          "token_sha256": "6808a13d9fda461f3045e763dbe6c533436639619140ce767f855fe6f57d6aac",
+          "stop_token": 537728
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 25728,
+          "token_sha256": "52100c27d2c16013cde56a6f429f247bb5840265980a6c3166d023d7515f5777",
+          "stop_token": 550144
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 38144,
+          "token_sha256": "72b1dcf79645335d7bb21b09b60ebca83f5c09da306cf662f39e8811a16dc817",
+          "stop_token": 562560
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 50560,
+          "token_sha256": "8eed1435f52a0ba3eec9966b1be8137caf51b13b9c500a97200859d91e63aad1",
+          "stop_token": 574976
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 62976,
+          "token_sha256": "f38a811e8ab2654b5afbc43024a359f063d11aea6d5694c8bf0926853c2862e2",
+          "stop_token": 587392
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 75392,
+          "token_sha256": "044e617e3d1445e14b6e43b99a6c1606913078928718cce1b3fbf216f9e4c3d7",
+          "stop_token": 599808
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 87808,
+          "token_sha256": "d1f074bdcaaa1e6f05fa804e0e29b075d2705ee4bfdd12dd2ea92a90d4f40355",
+          "stop_token": 612224
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 112640,
+          "token_sha256": "571a45c2dbe6af3707d71d27c21088e42249b09ec2a6030948e3d47488a9fb88",
+          "stop_token": 637056
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 125056,
+          "token_sha256": "3877bec1b43cdec6cff8ad046d8fd61d276a4542f90f0244840ac43ddacfd795",
+          "stop_token": 649472
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 137472,
+          "token_sha256": "622252222aa9559efb7ae940dcec3d270aef4438d12c1b5800d8ddfa5e11c8d6",
+          "stop_token": 661888
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 149888,
+          "token_sha256": "45ddfbdfdc2c6e46d01424cc45e5e364d867f85f1ca130551de88a67c2157bc8",
+          "stop_token": 674304
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 174720,
+          "token_sha256": "74ac13f4eb47dfac56e6374fcd1e2c1b883a6e2155d019c9576dea4fd71f8bd9",
+          "stop_token": 699136
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 12800,
+          "token_sha256": "647a6532c13b636b143053ce8a8be04495a08a5282d19475bb0d5b803143b8fd",
+          "stop_token": 537216
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 25216,
+          "token_sha256": "bd285332bfc6ea942dcfc7d90191328ac591811c369cba8dfbadd99982ab51b5",
+          "stop_token": 549632
+        }
+      ]
+    },
+    {
+      "case": "h524288-q256-t2048",
+      "history": 524288,
+      "query": 256,
+      "total_query_tokens": 2048,
+      "requests": 8,
+      "windows": [
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 188800,
+          "token_sha256": "19fe356f7fc2cbef0c23ee5126c1a36ea87a1ff50a92be949bbb0d9f3600a1f6",
+          "stop_token": 713344
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 2176,
+          "token_sha256": "f4afa99aa73dfee625081b7ae4be4ea3a52c857efb18c23f594ce1e8fa7aa2c2",
+          "stop_token": 526720
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 14592,
+          "token_sha256": "9c689a4818438a7c16f03c43ebdc4fa4d720c31124e9ac25eb5191917b575ec2",
+          "stop_token": 539136
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 27008,
+          "token_sha256": "b9aee0afe6fb89660e975b2e6a836c7d6854a242fb954c835b109fbe7e13b16d",
+          "stop_token": 551552
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 39424,
+          "token_sha256": "3328f783bb650adf9ce847727bcb5c567e78acb8ca91d2c4e5fb89bf038f5136",
+          "stop_token": 563968
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 51840,
+          "token_sha256": "a6c5142b5284b9265f98401d7ec770b858d8913742b6c49a11137985e4b0e385",
+          "stop_token": 576384
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 64256,
+          "token_sha256": "7a826c5edfb8b094c1bb44e29fb170d0c78bc87a6c7ae1a45c655edc1bf0a841",
+          "stop_token": 588800
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 76672,
+          "token_sha256": "c8718c29be465ca85daad707de0a25e662f106973533d624ecf833302161f66c",
+          "stop_token": 601216
+        }
+      ]
+    },
+    {
+      "case": "h524288-q512-t2048",
+      "history": 524288,
+      "query": 512,
+      "total_query_tokens": 2048,
+      "requests": 4,
+      "windows": [
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 189952,
+          "token_sha256": "537f87e3c10fdcfa44202193c1f59eee5442e376eb5defd72be22e5b161d8ca3",
+          "stop_token": 714752
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 3584,
+          "token_sha256": "3c35245e07d5e0d3532733175355c37242a39440ec04bba5fbfdccba6940da93",
+          "stop_token": 528384
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 16000,
+          "token_sha256": "ce8e4fe55e461edd52a1387143ebb80579b887e51ce097d44d2ff1a38652ce1b",
+          "stop_token": 540800
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 28416,
+          "token_sha256": "16686290f6307850d5f451db8ca03e854c0581017eb500bc699cdcd68844475e",
+          "stop_token": 553216
+        }
+      ]
+    },
+    {
+      "case": "h524288-q1024-t2048",
+      "history": 524288,
+      "query": 1024,
+      "total_query_tokens": 2048,
+      "requests": 2,
+      "windows": [
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 5248,
+          "token_sha256": "476f2554c8a109240166847a2050650dffe0e03a2175a0142791ad62f246bb91",
+          "stop_token": 530560
+        },
+        {
+          "task": "fix-ocaml-gc",
+          "start_token": 17664,
+          "token_sha256": "9f16ce5d553f5d431c7753a5e6a7b78a4079d409099666402e86c54343f21d5c",
+          "stop_token": 542976
+        }
+      ]
+    }
+  ],
+  "provenance": {}
+}

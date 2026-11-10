@@ -1,0 +1,9 @@
+{
+  "scope": "Publication-only documentation changes",
+  "excluded_from_original_source_hash_gates": [
+    "README.md",
+    ".gitignore"
+  ],
+  "original_complete_source_map": "references/original-pinned-source-identities.json",
+  "production_source_identity": "Original pinned hashes continue to apply to all other original files; no current-tree automatic enrollment."
+}

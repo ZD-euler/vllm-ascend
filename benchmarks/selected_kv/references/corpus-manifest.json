@@ -1,0 +1,1467 @@
+{
+  "status": "passed",
+  "corpus_version": "t2k_22layer_dp2_real_windows_v1",
+  "cases": [
+    {
+      "case": "h65536-q128-t2048",
+      "history": 65536,
+      "query": 128,
+      "requests": 16,
+      "local_requests": 8,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "port-compressor",
+          "start_token": 0,
+          "stop_token": 65664,
+          "token_sha256": "0462dcfd3a65f2d11ba63fad59926020410e61c4dcb995e3621da89cded83663",
+          "first_block_sha256": "a3ffcfc2ace62d40929fb9ab183ce91cdc23fce09dfdbabaf93991abd3c8121d",
+          "history_sha256": "3967a262f1160791d1b551c7eb6bfe755ff3860fe49b6698af5877d022bff955"
+        },
+        {
+          "request": 1,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 0,
+          "stop_token": 65664,
+          "token_sha256": "3b4493684a91f37fa3bad1b44a219fcfca259a31c6f6f297bd59d728b69b1066",
+          "first_block_sha256": "bdfd19008cf55826fe28679d4a20a64bef4dbd4251902d58230b2aa7aee4eff4",
+          "history_sha256": "9ff9352ca1bfd41ac5a6cc1752d478976dfc70d994d1814865a2c03771e25270"
+        },
+        {
+          "request": 2,
+          "task": "huggingface__transformers-27463",
+          "start_token": 0,
+          "stop_token": 65664,
+          "token_sha256": "38b1541e756352c691fe88ee0fdc2cac30066ac30ebb9b85366cb61da88be2d2",
+          "first_block_sha256": "9ea10bb41765fbb51e2ab413fe8569aa37fd4024c81c48d0b6a5628d2a0f63bf",
+          "history_sha256": "f7a24dfeb5f4499d41b4370f4809615c593c8680cd38b96eab0e58b0c0df89f9"
+        },
+        {
+          "request": 3,
+          "task": "port-compressor",
+          "start_token": 12416,
+          "stop_token": 78080,
+          "token_sha256": "fc78b6b6a7b61520e624d6bddf61a0cd81500c867a1db9dc17bc6c76ae774a18",
+          "first_block_sha256": "ce71305391e7b3cad7716e012b7900d803589cd67639844855adb5b420e3f619",
+          "history_sha256": "c2d4480f30862dc5289a0f3be1d3dd6470f70280d6e959a39bf98df2d6538f76"
+        },
+        {
+          "request": 4,
+          "task": "3d-model-format-legacy",
+          "start_token": 12416,
+          "stop_token": 78080,
+          "token_sha256": "d9f0164b84d72cb5b490073a455ce02fe573f17a27b1e315b1cb13448d732bad",
+          "first_block_sha256": "1e3d163f9f535b9d9ec0f20c2e7f5bd1b92ec4ff8ea97ead414dc7762e60e61e",
+          "history_sha256": "72351956f2b49d26f4276953f77e9a135e0b0e9327b506c880f15f93b82a07b3"
+        },
+        {
+          "request": 5,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 12416,
+          "stop_token": 78080,
+          "token_sha256": "4af75008afb239d12d73260c6b7dfae88c3bc85e53faf9bbc0b3f9a7ae81d037",
+          "first_block_sha256": "798457b13eb1c7be0af93bc04a1aa0c46a1efe0a52d0d21c7ab0c5624b879500",
+          "history_sha256": "3cdc4b23b4bfe5ae62c02992bf1246f5e68dd952222b1c935b6667bde119bd0e"
+        },
+        {
+          "request": 6,
+          "task": "polyglot-rust-c",
+          "start_token": 12416,
+          "stop_token": 78080,
+          "token_sha256": "7147418a7a6392cfcbe0c1e538e1b74f46c468a6f5b4dd28cdf14ef34a99b632",
+          "first_block_sha256": "52344b5bd25b879fafb22f4ee1cdcdc162ef8b9449da07e48687f54b50b89171",
+          "history_sha256": "e33ab37d538362b0d144b94e85802b497ea092122dc3d68e3a960692efcb9f20"
+        },
+        {
+          "request": 7,
+          "task": "fix-ocaml-gc",
+          "start_token": 12416,
+          "stop_token": 78080,
+          "token_sha256": "15e593dc55c71fa34fecb50e79eb7c356cb7a7f3d906698ef752ea6c4e604763",
+          "first_block_sha256": "612ff91648459558f988c8acf7508294f0cbf022b2a3cecb940a40e3f5e51bff",
+          "history_sha256": "4a12e0747aabdb6215541e9b776cf45ceccf945c94750d5e2291f9966420e9f6"
+        },
+        {
+          "request": 8,
+          "task": "reverse-engineering",
+          "start_token": 12416,
+          "stop_token": 78080,
+          "token_sha256": "6a340bfc41d05bbfef5eae3fcee389e1f9aa2e2cbc778fd55439dcbafe03c475",
+          "first_block_sha256": "15ccb6d6bf138cc7f9fd39b129bbd99f6e3978d48a927f0dc0e5ef3d109b8c33",
+          "history_sha256": "40347bb847f5c1b85ac18dd92a673d8cfa10a34da53ca6b23a43e97586441dd6"
+        },
+        {
+          "request": 9,
+          "task": "huggingface__transformers-27463",
+          "start_token": 12416,
+          "stop_token": 78080,
+          "token_sha256": "e0166d477316b7120ad868f8c78e96297e1081214329dc52c0109ed64f1f0bd5",
+          "first_block_sha256": "d160d521f310bc68abb385252f7ce2721e6e25d7e883b59052bd3204a606601a",
+          "history_sha256": "331cbea075f6f0a82620cbb5822f519bfaeb4028aa3765d3fa95210d00214ba8"
+        },
+        {
+          "request": 10,
+          "task": "instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan",
+          "start_token": 768,
+          "stop_token": 66432,
+          "token_sha256": "c433ab71a5fc2b600a6318a2ce416ddd96cab55905ff4f2104c4a20054521574",
+          "first_block_sha256": "49e4f3d82f6f693d41d3e95ecfb647e909123c92ae48b3e24c6b5e1bc091383b",
+          "history_sha256": "ba71eb102c0d53b9874dc959e113a01dfcbff5753496c748553f8f09418fba5b"
+        },
+        {
+          "request": 11,
+          "task": "port-compressor",
+          "start_token": 8448,
+          "stop_token": 74112,
+          "token_sha256": "ae752769a8075d94221ad651bb4e14e5fd92561c602179c9917f5555077d7a0f",
+          "first_block_sha256": "2c8a07a6476d38dfdb85130c00940719b3e78d0e3f4becb7ea61d2c7f0f7da48",
+          "history_sha256": "d72ea97eef7ae9d7836f5cce213fcc484844865ae03cd56b4625c70222d1d2a6"
+        },
+        {
+          "request": 12,
+          "task": "3d-model-format-legacy",
+          "start_token": 24832,
+          "stop_token": 90496,
+          "token_sha256": "329a7e7bc94b624f9ae63c528d4d26d6cdfd2f807a5aa983b07b4ec8032ce39a",
+          "first_block_sha256": "31076b7fac577408320be3b92ec3f5ff4328063eaa4d1f5e452dca8523ca5027",
+          "history_sha256": "f9c23f31c4cd0649f1d778a40e4db236eda8f8ff2c0711f76cf21add8318be8f"
+        },
+        {
+          "request": 13,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 24832,
+          "stop_token": 90496,
+          "token_sha256": "5ab8bae6888000e1d395eef5be4d68477440ed8c1aaa506110021db4bf39f6ad",
+          "first_block_sha256": "f8b94821467eb04d3dce7af8116c8224d7e8517b7ebb8a9ab5e13fc885f1db08",
+          "history_sha256": "baa9bdf6f0db8d5b2fee9a769387b15a951f125ac397f7fdc7b67f53c09f0927"
+        },
+        {
+          "request": 14,
+          "task": "polyglot-rust-c",
+          "start_token": 24832,
+          "stop_token": 90496,
+          "token_sha256": "2ed248147eb671dc144693ef5bc0c0c35ac8332496678711335d681bd47707f9",
+          "first_block_sha256": "d3f10cad206fa94c1fb012626b0cb047f70480f74f8b8d8f0dc0deb010f442c0",
+          "history_sha256": "81e6806761e4c6bb7acc782827dc2505f08011d3664de75278b7a6df4029126e"
+        },
+        {
+          "request": 15,
+          "task": "fix-ocaml-gc",
+          "start_token": 24832,
+          "stop_token": 90496,
+          "token_sha256": "1a38dd2e1b992c66b7f9a1f6d0b42ec6250ba15fe961fd1b028294a5e440c3bd",
+          "first_block_sha256": "4ffe2b1b9f007ae448ad69b98f0a8e98886292171999287769ef09fdfa4a0e2f",
+          "history_sha256": "7258c2033a351e53ce274ea407fc97b8cf43a02cb65871f39f71300487af0511"
+        }
+      ]
+    },
+    {
+      "case": "h65536-q256-t2048",
+      "history": 65536,
+      "query": 256,
+      "requests": 8,
+      "local_requests": 4,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "port-compressor",
+          "start_token": 13568,
+          "stop_token": 79360,
+          "token_sha256": "a919d3133c053f222a390b8dbe5333d1de7167c85c0457fee7fa2a67f4475b56",
+          "first_block_sha256": "add0e77e7960c4f6cf054fb9e1bba35951d1651747adb97a5071a27be65d6e58",
+          "history_sha256": "3a7ab3a8b1525bd8655aed6564a28cf28672b4ce0f1badd29c1eb4c2a216aa31"
+        },
+        {
+          "request": 1,
+          "task": "3d-model-format-legacy",
+          "start_token": 13568,
+          "stop_token": 79360,
+          "token_sha256": "c183d826c3b73ef5fe5684efbb7b68fa4fbe063396e24be66bbe3e4ecd1641a0",
+          "first_block_sha256": "6194068a2480f95a661d961054baad581505b3684a18b4dd0b149815343805eb",
+          "history_sha256": "9d59543e4fab09329d3b1d180153441a97ecf723442a827e69ed552f6c9c7870"
+        },
+        {
+          "request": 2,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 13568,
+          "stop_token": 79360,
+          "token_sha256": "1a627db61a61d384b3224a7bfa5931bc4fe6099b84e64da0015bcd006c55fd83",
+          "first_block_sha256": "6b1f2a846f44730d80415a822e42c5f6286114fc64fcea4fbec5954e46a5ffc8",
+          "history_sha256": "91761f93e043f608ce598e191fdbd4ed423f6385eb66c082f000f97007e230ba"
+        },
+        {
+          "request": 3,
+          "task": "polyglot-rust-c",
+          "start_token": 13568,
+          "stop_token": 79360,
+          "token_sha256": "ebb6e3ad89d72bbae9c652d1e2db3c92bf777e282209b82bdcb392be5030c22e",
+          "first_block_sha256": "a9b2ff01afd470cff2ca899153eb3af716914acf68e6f5c37ec30aacac81c51b",
+          "history_sha256": "a679e75902bb39abd3222807787134fe90d87b4a5b8a8c542fee41ca288e755c"
+        },
+        {
+          "request": 4,
+          "task": "fix-ocaml-gc",
+          "start_token": 13568,
+          "stop_token": 79360,
+          "token_sha256": "c79cf1ac4cf62a41529ed2b6f96c41f1af901a3215c5ba9205c5fd85accadf59",
+          "first_block_sha256": "63b8a02d4736f89a3ebe7464f9e950f110e5cd7560af425efa1c51a903926221",
+          "history_sha256": "2296cc1ee91e9a85179678b48244a2a4342e9d0b17cbbf425255ba192da45f29"
+        },
+        {
+          "request": 5,
+          "task": "reverse-engineering",
+          "start_token": 13568,
+          "stop_token": 79360,
+          "token_sha256": "0e32d6144876c5db683452bc0a2160e30bf35d6bca1ec183e5d93c98ae5fada9",
+          "first_block_sha256": "cca20726c62de26bb3723bcd08a06aa38af1aabc6362211ec3cfbfc77704254b",
+          "history_sha256": "e69b2d12b55722a149cbc353f4ecd8ad6285a47e6be4cf051285a87903444dda"
+        },
+        {
+          "request": 6,
+          "task": "huggingface__transformers-27463",
+          "start_token": 13568,
+          "stop_token": 79360,
+          "token_sha256": "85cc5f7a9ed211ac487c528ac2228332cfd0ed3f712bdbc6e3a6b8df56301593",
+          "first_block_sha256": "207557d88193b8181ca67ee866067ed55228060106252f071d4361a5e57caa8e",
+          "history_sha256": "9aaa8f722d9d0abcbf79abccb5f2d2d8716588d717918fce8a1029b32a262f7e"
+        },
+        {
+          "request": 7,
+          "task": "instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan",
+          "start_token": 2048,
+          "stop_token": 67840,
+          "token_sha256": "af299def08cfc3b4bec4ef28e7e35e26dfc0978b314cac60cee942d508d7651a",
+          "first_block_sha256": "fedb9596150b26320b0760fac4c0650a3e8eb77dd136fd5d14c8cc58fe05eae9",
+          "history_sha256": "9df412e35b5546d7df19632d6fab4cc1cba5a7e0b179884b598e20246eb14c27"
+        }
+      ]
+    },
+    {
+      "case": "h65536-q512-t2048",
+      "history": 65536,
+      "query": 512,
+      "requests": 4,
+      "local_requests": 2,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "port-compressor",
+          "start_token": 11136,
+          "stop_token": 77184,
+          "token_sha256": "84a506eaafd72fa2882bfca21d5b4f85b8f59f21cd40d351d2ee4f2f2c3aa4e3",
+          "first_block_sha256": "79b2ed71edf84fa63106fff395594059f223f89cab38b33b54722c1ac627e060",
+          "history_sha256": "197a7ec62d67a0db9271d3cca748039569f50150bbc38cf5743f624746997613"
+        },
+        {
+          "request": 1,
+          "task": "3d-model-format-legacy",
+          "start_token": 27136,
+          "stop_token": 93184,
+          "token_sha256": "658f70bac3472811dc7a9f2ffa7f3caff18c7780d5a7d63167f9fdee0538e7db",
+          "first_block_sha256": "e02fee62eabc7b715923fdbc16bb0fe6e99608647e84f938f0b85176b6a8375c",
+          "history_sha256": "72957c3e4799bc1d99da98eeb36ff74b367960bf1e2871457e8a0be95587208a"
+        },
+        {
+          "request": 2,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 27136,
+          "stop_token": 93184,
+          "token_sha256": "a09d72104e3290859578a0f63dd5bc30447a63fe318976f1aeab1921d0c1e8a9",
+          "first_block_sha256": "c0c714a623b285e7d8644696921cff4145ee5ac0a17c1a920d3dd64766e3a0b2",
+          "history_sha256": "afed005cc8dacf75247cee35f70a2083ef6bd2e4e455106abe8db6d3fd4feb07"
+        },
+        {
+          "request": 3,
+          "task": "polyglot-rust-c",
+          "start_token": 27136,
+          "stop_token": 93184,
+          "token_sha256": "d7558d80d36c0dfb4d1b7f8c95fe4b46701d82de150fec17d513367c443996f2",
+          "first_block_sha256": "6ff4a3893e3f1acbec1a97f802f84a6c1c1946a9b123d3646f8e082f8ce6f82d",
+          "history_sha256": "96cbfffa7d1fb2fcf107360b5102913b4145f1ac8df37c06ac83bd2d629a353f"
+        }
+      ]
+    },
+    {
+      "case": "h65536-q1024-t2048",
+      "history": 65536,
+      "query": 1024,
+      "requests": 2,
+      "local_requests": 1,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "port-compressor",
+          "start_token": 9728,
+          "stop_token": 76288,
+          "token_sha256": "c4a9bc48085f6d20252752c08c3b13fefdcab0e1845e74055a2d7df7dd105e4b",
+          "first_block_sha256": "b408c6ba7f7d914741b817f2000468fa83a70c290211372ddb8d17c11a72ebae",
+          "history_sha256": "4a7752ae3b1076765cdbac0ee95825d8effa8185ccfe146c53afe501de5698f4"
+        },
+        {
+          "request": 1,
+          "task": "3d-model-format-legacy",
+          "start_token": 40704,
+          "stop_token": 107264,
+          "token_sha256": "f5faaf5b506e529f3a7fe4b366339f7ea1f510a09e57c0cd7d5d10fa5764725b",
+          "first_block_sha256": "9826ef5858dc656898770c8fb12a3793f98175b59c84695144b35c93c1062d02",
+          "history_sha256": "a21134a0297f7f08439fd305146ac82ed5885155777b7fdfa6b2474747378d2a"
+        }
+      ]
+    },
+    {
+      "case": "h131072-q128-t2048",
+      "history": 131072,
+      "query": 128,
+      "requests": 16,
+      "local_requests": 8,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 54272,
+          "stop_token": 185472,
+          "token_sha256": "a3ecb185f7e746fa4d33b5233beacd33e626a3372da6401740fad94cb282305d",
+          "first_block_sha256": "7d325cf4d67cd53bc6b594d312748d89eb5824a960574ff167b4ec827e20cb52",
+          "history_sha256": "bcbe0c21b356de7b05e26beef7ac518a7f416889f54e12d2c101880f1ff6691d"
+        },
+        {
+          "request": 1,
+          "task": "fix-ocaml-gc",
+          "start_token": 54272,
+          "stop_token": 185472,
+          "token_sha256": "b14ef47ed4497ee631ef3cc392e85a035716cf88ccb568292f8ac513f8d7bf36",
+          "first_block_sha256": "ab01b8f8bf3dd4e20ebf43c4850591528925d778619c9d4511f2c8abee6a5c77",
+          "history_sha256": "74c1eaf5de58206b140d48e3d1ebac0b01f7702b3a58fae16b982a009813dc0b"
+        },
+        {
+          "request": 2,
+          "task": "reverse-engineering",
+          "start_token": 54272,
+          "stop_token": 185472,
+          "token_sha256": "fab18a6fe2bf792d4c8572901367dbe7d6d8da59cd0c8cf16a736ef829438396",
+          "first_block_sha256": "0a881c98a0e6f04d5e128459083ce97ea4bb5f0a7403c5e63c6d03bcc467fe4b",
+          "history_sha256": "7257723447adf1cf9346786d32b3e4bf4cd038c5e9ed579f4bcea44e17e6a88a"
+        },
+        {
+          "request": 3,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 66688,
+          "stop_token": 197888,
+          "token_sha256": "9a612d462c6432448afe7d78e7d7b73dceef5e19c68f9fcfd68257d0ae4abcc6",
+          "first_block_sha256": "62c6b2135f5fb66d80270f7971130bf7ec29832a21ca605d22332db94dcecd07",
+          "history_sha256": "7a3f43f8873bb982e63f0a33c935b515bc7c079a4ccc750eddcbda70e8d99df6"
+        },
+        {
+          "request": 4,
+          "task": "fix-ocaml-gc",
+          "start_token": 66688,
+          "stop_token": 197888,
+          "token_sha256": "99bb191a44f2ee7552a7e1d0c1b45648b8fa0ddaf15b87124da2d1054409c580",
+          "first_block_sha256": "52c12bca60e2ca978e0359746115fa95fa949f1975037ef1ea9cb022b6691f30",
+          "history_sha256": "837df46ca127b69cb490c9ed3f3b3a1e6e4e5f22ede42b33cef5781125e5d155"
+        },
+        {
+          "request": 5,
+          "task": "reverse-engineering",
+          "start_token": 66688,
+          "stop_token": 197888,
+          "token_sha256": "fb748f142c43d00dcba43458439938b075c3db6248c322fa09566067de751aa9",
+          "first_block_sha256": "6b0c4dd9e918acacacf524c24a5baa9e73d30aff5c23d0646a0e79133f981b3f",
+          "history_sha256": "900e5dba5223f2550f01316de5c9ad4bc280ae26ce209999781dfe59f1cdeaa7"
+        },
+        {
+          "request": 6,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 7808,
+          "stop_token": 139008,
+          "token_sha256": "7c0d629eea88045e367c26325c461f2083655d07cc955ee742f64790ebe0e567",
+          "first_block_sha256": "e5dc94b64ac76610cae93676509b1c000eee1eda8fcc4b5389426385776b5de5",
+          "history_sha256": "3eebf5aac9e7adf64bc5610e5a6f6c603548f54cc9bdbe6b0b0f83ae22ba66d5"
+        },
+        {
+          "request": 7,
+          "task": "fix-ocaml-gc",
+          "start_token": 79104,
+          "stop_token": 210304,
+          "token_sha256": "dc70a45f10ba412876222b39a4ae59337b5ee999c3bdcc0d9983b736abc72683",
+          "first_block_sha256": "34aa020785b31a88cf90b04f52e9c486e444afcb559fccaa74c223e2dfac1705",
+          "history_sha256": "1dc9acc072bfe43ed4a3f2d9fcb932b4b90de54c18d107fa1aef160160676ca2"
+        },
+        {
+          "request": 8,
+          "task": "reverse-engineering",
+          "start_token": 79104,
+          "stop_token": 210304,
+          "token_sha256": "b86b426b18a8415bafdfe71d19a29e7a181a7e7b9d6f86262c547b1310f5af42",
+          "first_block_sha256": "7f3272bec38ac87067e7c17dd7449f2f8455f13c030c70cd501c2169ab7d641a",
+          "history_sha256": "fbed818e9791ba9b4d0a847c52ea7ae3561eb63e65a652c02994cca011d5495f"
+        },
+        {
+          "request": 9,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 20224,
+          "stop_token": 151424,
+          "token_sha256": "de22c34a8ec33e48b1d9aa9768274d6e0a3777fd5bd61dc877f88c370013ba6a",
+          "first_block_sha256": "3172bdf96356b6e032dc21adf789777d85d488be75296fe3da4e348393f7664b",
+          "history_sha256": "a7ce741e49d448a61a72b2102cd2a490bda94d5989aa0a143f06ae8f582c4d09"
+        },
+        {
+          "request": 10,
+          "task": "fix-ocaml-gc",
+          "start_token": 91520,
+          "stop_token": 222720,
+          "token_sha256": "1ac3888f615af6f989183a73283c107a4615e44e97f3a81d9f321a48afbda531",
+          "first_block_sha256": "1acec5a1c1f1776fafcdcfa2f150067602dbf40aa9c58acd5c924a06333b317e",
+          "history_sha256": "2d70600ad7a35e4a7dc1e5fd811fc6b99fa45d7f4d4e7c5b18283a6b62165791"
+        },
+        {
+          "request": 11,
+          "task": "reverse-engineering",
+          "start_token": 91520,
+          "stop_token": 222720,
+          "token_sha256": "b6b866a1cc8e5de66b39aa65f74f69b30309d6a6b056e8c894db2853f238840e",
+          "first_block_sha256": "f19598ccb991b25da2b32fbe08b1cbe92d9febc26b3acff27baf993dabf20642",
+          "history_sha256": "02d9612f036cfbe257b3d0f65a50f6c4959588c0472c690de959f17fa5b49997"
+        },
+        {
+          "request": 12,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 32640,
+          "stop_token": 163840,
+          "token_sha256": "6a4a0adbd59d63c8bf0bda624c57f4b919b2ce012b52e2cf3d294702e4674065",
+          "first_block_sha256": "97c53d7282bebdd770f8011d58de0dcc6680cb69a4790a15c9127f3c7b924004",
+          "history_sha256": "b2ee58d22ff7cd43d606e7dac8fa4b3ce1fb4f1cafb7d794335bf6b98586a586"
+        },
+        {
+          "request": 13,
+          "task": "fix-ocaml-gc",
+          "start_token": 103936,
+          "stop_token": 235136,
+          "token_sha256": "c1e9e27461d5f910f8ce5b519cd5a462a07e7e4f7320b4d1de721bf9c7b4bbfd",
+          "first_block_sha256": "1d89bca9733d37a6bcd4fe9c5fe1fe7e70a36a54effb22de6301664b0337faa2",
+          "history_sha256": "f737d6fa8f0dd201e5426aeab4568516b105e65df4b8972587c97433b33825d5"
+        },
+        {
+          "request": 14,
+          "task": "reverse-engineering",
+          "start_token": 103936,
+          "stop_token": 235136,
+          "token_sha256": "0f9ee3dbe4ecca474018f014e97476d2fe5a204c0ead9cd3c88ec54ab375b2d2",
+          "first_block_sha256": "46a8f990507df3d8677e3d944740a6afc0c9318ce1a534c0a954278ec0a883b3",
+          "history_sha256": "62f7e4178889a72613c3df637b1b55e9988006528b167c873030f20c8fb38ee5"
+        },
+        {
+          "request": 15,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 45056,
+          "stop_token": 176256,
+          "token_sha256": "e0784fb8cb2374148a5376bee70dda6fd6bf93aa60ab0e1556f6ff27ea790d08",
+          "first_block_sha256": "c6a2d111b0fe39602dfe4d516cec3d91829e163090a1004886c7fe38e3dfe454",
+          "history_sha256": "5c1887a55bcf7b5b8dfa0973351b451e5d15725a12d2da60e3cab429cf3a334f"
+        }
+      ]
+    },
+    {
+      "case": "h131072-q256-t2048",
+      "history": 131072,
+      "query": 256,
+      "requests": 8,
+      "local_requests": 4,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 67840,
+          "stop_token": 199168,
+          "token_sha256": "600a5efe117ea89f4f3bc35ecfea8b7780f417fe3cfa30860f01718cdddd10dd",
+          "first_block_sha256": "f188b0d004ac0a3f338c2d16881b912749e21a1349e2d011af72ae5a54d3f6a0",
+          "history_sha256": "673d13f13f5a953f0f03bc51a53d9c41b15eb9c11c34d8e9c5732c89d658b988"
+        },
+        {
+          "request": 1,
+          "task": "fix-ocaml-gc",
+          "start_token": 67840,
+          "stop_token": 199168,
+          "token_sha256": "131275187a91c6370f322dd27d51cd42cbeb560e810531dc987747777dce5fdd",
+          "first_block_sha256": "1b250d6925aaeca97ac84e553c90035c9526379edaa82f4600630b6df037e047",
+          "history_sha256": "3c3bf51ee97623db1c86a86ebc91d54c0ba839f0a12ab97e9f429655baeb9e4d"
+        },
+        {
+          "request": 2,
+          "task": "reverse-engineering",
+          "start_token": 67840,
+          "stop_token": 199168,
+          "token_sha256": "b75e9ff971769951ac2df1abca5d569bb5843d57aaa330d36e8dfc9bc4b960a4",
+          "first_block_sha256": "edd488bc6871c5bab290b4b670fd08475647f5f633a42a85fa4eab5ec3c13e69",
+          "history_sha256": "ffb84a28b903d376ed2b0150efeb69c1a94bc9a278d74d98d8d303551905255c"
+        },
+        {
+          "request": 3,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 9088,
+          "stop_token": 140416,
+          "token_sha256": "cf5c877e1b611585db7e5d9eb537580d954427a390e46bb0753ddd5a5e874e7a",
+          "first_block_sha256": "c6bdcf8375ac6190044771c3d3238037dcba31a83145685ec7e73ec23dcdda94",
+          "history_sha256": "0eae5518204025836eff9fa6512305e3f97a1466bcaa75e209a10d4d17ffba3e"
+        },
+        {
+          "request": 4,
+          "task": "fix-ocaml-gc",
+          "start_token": 80256,
+          "stop_token": 211584,
+          "token_sha256": "f159d5e5e77fe18280507258e73b6521ac8f590621fe854f40066373676672b9",
+          "first_block_sha256": "11d82e1a7e7e3a2a4c6c839f609f7df6025597d909d0f4993c287fdbb901a66a",
+          "history_sha256": "dd7ce7e46ab585e41c94d05e8ac60e20aa8e01e1b7e3647e55afa19128355d4b"
+        },
+        {
+          "request": 5,
+          "task": "reverse-engineering",
+          "start_token": 80256,
+          "stop_token": 211584,
+          "token_sha256": "80d4c8496d6da2a52ef4c352ae4d9d14cdb230c68fe16e88fa149cdf18bb6bd0",
+          "first_block_sha256": "8c0b60bf6f49cd533a14c8f2646916a93c45c05c83b2e0e70e7235cc0815720e",
+          "history_sha256": "1cd62de5ab72e8669be9ece91171afc866b2f59410f3fae358ea47d74c7f7a97"
+        },
+        {
+          "request": 6,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 21504,
+          "stop_token": 152832,
+          "token_sha256": "e76d1dfb3756f07e4f9bcbea4560a2280d295c5d2bbc42aa9c2acee4a2f9db8a",
+          "first_block_sha256": "13bf6b68b6f79ae8dec2828f6579a4854bd6dcf46ff72863a71900b06302b7bc",
+          "history_sha256": "cf08e1eb95f447033c805253446a9bb44a366ef835f74ec66fb0e39d699a6be3"
+        },
+        {
+          "request": 7,
+          "task": "fix-ocaml-gc",
+          "start_token": 92672,
+          "stop_token": 224000,
+          "token_sha256": "c85326ef60ece3ace568e5e3b97af8513372e1608179c3293dfa56a0d5cccef7",
+          "first_block_sha256": "ff2b91ae49dd7ce7b139af5d81df13fde170814b56ad06f51ca2a2224a651885",
+          "history_sha256": "64b504f4e82fc439e459e54230e682b3125bf437f72d23deb61033bc5459bea8"
+        }
+      ]
+    },
+    {
+      "case": "h131072-q512-t2048",
+      "history": 131072,
+      "query": 512,
+      "requests": 4,
+      "local_requests": 2,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 10496,
+          "stop_token": 142080,
+          "token_sha256": "4d285842366367d79038d9e7d0361eed4a93debf0a5de255db1e068dbc43d9bf",
+          "first_block_sha256": "7fab08118208b01b6e8a14e00893141a94f58e0bf2d40d5307ee8e84d8b00162",
+          "history_sha256": "f2707b5c9564d459672f654ddb32ae2677f18e1296ce824ea3f9fad089b5b380"
+        },
+        {
+          "request": 1,
+          "task": "fix-ocaml-gc",
+          "start_token": 81408,
+          "stop_token": 212992,
+          "token_sha256": "81c5d6120992c72d1dda9aa81256adb2d5a10dc5e8af6595b363f4a84f6351e1",
+          "first_block_sha256": "52e9bfb241851be84fc30f215cea8f3f1329d0b6bbe53eab61ef0e6c6011d94a",
+          "history_sha256": "aacc8b1f7c8912dd20a8f8d4ffd0b149895891dc3c7166c55760247d32ceebae"
+        },
+        {
+          "request": 2,
+          "task": "reverse-engineering",
+          "start_token": 81408,
+          "stop_token": 212992,
+          "token_sha256": "e120d214d0f26db441e47ec043ed9a17e7a3b1483029c07cfe758999d65bb1d5",
+          "first_block_sha256": "e0a7c04a668611cb9e6aed5df979a665acb769731cb95b2c287cfb49081f33a0",
+          "history_sha256": "bc45c309b703350650309f6be0634e48753995582ff51321a806c9dbceed9241"
+        },
+        {
+          "request": 3,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 22912,
+          "stop_token": 154496,
+          "token_sha256": "af109b5d14ba75cbb86857938cd86ec260ec48131d439576b8bfa946b746c2c4",
+          "first_block_sha256": "c9aa4075483eab33e213ea732ca8937c7f0ba690351d4de470d97e6402990cbd",
+          "history_sha256": "0ae2961988f6fce920ddc76a2f2f42c7a0cff9c89b89e3f58e23b366f22337ce"
+        }
+      ]
+    },
+    {
+      "case": "h131072-q1024-t2048",
+      "history": 131072,
+      "query": 1024,
+      "requests": 2,
+      "local_requests": 1,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "schemelike-metacircular-eval",
+          "start_token": 24576,
+          "stop_token": 156672,
+          "token_sha256": "fd209376896f7baa012adb46cd8c17c580e0a945b3fdbe755e23de788e25a44e",
+          "first_block_sha256": "9e081a4d776ae7a026c2a5621d557782fc0eb24a2c5f1d4442d1d67576814e89",
+          "history_sha256": "bf840eba92fed75fef03cd8b75fc4406b480841e547df521a065d49992093779"
+        },
+        {
+          "request": 1,
+          "task": "fix-ocaml-gc",
+          "start_token": 94976,
+          "stop_token": 227072,
+          "token_sha256": "344b8839085123019ea49301139f6cb4e6f8682ba570a5bf71e3c4f2ba1a930d",
+          "first_block_sha256": "caf9c92208c86c7fdd15769c14b82b63130aac89ba2d77970959261b648dc255",
+          "history_sha256": "2c4460d4effbbe31ec308668b63e4b7b51dc7ef7b1ab732a31ddcafdafe25213"
+        }
+      ]
+    },
+    {
+      "case": "h262144-q128-t2048",
+      "history": 262144,
+      "query": 128,
+      "requests": 16,
+      "local_requests": 8,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "fix-ocaml-gc",
+          "start_token": 108544,
+          "stop_token": 370816,
+          "token_sha256": "d196826c3cfaa52c3eef27fcef409a10beace633f6df91685ff6716839e2b1e8",
+          "first_block_sha256": "6faf18ee1e1f5902fcbd94efa37c7f2324d25a64fb402ac216d0da0c7965faaf",
+          "history_sha256": "88c25e52d4c95d6fb3425c46b944539b681b3d78a283c614560e6ba7c76bce5e"
+        },
+        {
+          "request": 1,
+          "task": "reverse-engineering",
+          "start_token": 36352,
+          "stop_token": 298624,
+          "token_sha256": "82f2e9acb822a6ce203eb50b7244ee9f53ae887c19e4123b405d2faf29b71217",
+          "first_block_sha256": "e25a9007b212bac05437274b522a9b112b3c7fada1e9922d32b80a55bb707de9",
+          "history_sha256": "cdf29422f7f371e86a7d3c3327a42fb2b7f58308ee1700cfdc2544e03bc951df"
+        },
+        {
+          "request": 2,
+          "task": "fix-ocaml-gc",
+          "start_token": 120960,
+          "stop_token": 383232,
+          "token_sha256": "d25874ffd6883b6109aa4fc29d128e3e0751ba4da91c46f5d740a09c36ad15f5",
+          "first_block_sha256": "74f92457ece4b1ab648810e88e7c363ab95dd58ac50f348c2bb4fd9350bce511",
+          "history_sha256": "13738c0a8b77bccb8c599e0d620cfbd4b650a41b2883fc35e9656ba3537f09ef"
+        },
+        {
+          "request": 3,
+          "task": "reverse-engineering",
+          "start_token": 48768,
+          "stop_token": 311040,
+          "token_sha256": "4c0561fcdea9ebc27f258451bbb628adb87df171a87e57e93df75b92271c47d5",
+          "first_block_sha256": "cd39e420a75503042722dbe75664e6cc580890925982525ddcdda56247267397",
+          "history_sha256": "268f74c91762fd783bb118c98ebabbdc7de921ce356605ad8e40ae12efb38c30"
+        },
+        {
+          "request": 4,
+          "task": "reverse-engineering",
+          "start_token": 61184,
+          "stop_token": 323456,
+          "token_sha256": "1dbd38f08ba477abc719f7fa76e29b71b91618b9c147bf71e337343564ae47bf",
+          "first_block_sha256": "e6023493054b15396f5108d24807a73e47b8f18146a83ca07e6c0c1f9f496810",
+          "history_sha256": "237878a1a7aadfd4271c95f1ff2f1a114047c5e163bc65e05d4c22768475db7c"
+        },
+        {
+          "request": 5,
+          "task": "fix-ocaml-gc",
+          "start_token": 145792,
+          "stop_token": 408064,
+          "token_sha256": "1511cafc92f560165c29c9f9c02e516dee7db5e4a12cbf8d02464f8fe0cb8eba",
+          "first_block_sha256": "e3613914149a32eaed68b3a13454d77b2757282a3c914ee961fff908c95374fd",
+          "history_sha256": "a8a5e416f56044acaa0bb137f5c17d14ee003063a912f51782e1675a21a43380"
+        },
+        {
+          "request": 6,
+          "task": "reverse-engineering",
+          "start_token": 1408,
+          "stop_token": 263680,
+          "token_sha256": "205029161fb936778e8354701b7951c3a8915c9598f21e2b884e6bba7f303990",
+          "first_block_sha256": "91dfb751b5b9c509b49e345e8be765364543cbb0078fe62ee89c661677310975",
+          "history_sha256": "5756ca38412b2361a9b8e0d47436044946f8971ee13e09ab7a6d7cecb3396e07"
+        },
+        {
+          "request": 7,
+          "task": "fix-ocaml-gc",
+          "start_token": 158208,
+          "stop_token": 420480,
+          "token_sha256": "231e3e66fafbd538704d20739081d6e575423be2715ba42479b5ba05e53ec196",
+          "first_block_sha256": "2d1d2bf6117fcd4a9a6fe47768fdab74d2af23ca7dbad41ac50188b8a1a0f14b",
+          "history_sha256": "e19287be6892456a78ef3a02b7fcca0f0803392d01bee1060558e94e2dbe036e"
+        },
+        {
+          "request": 8,
+          "task": "reverse-engineering",
+          "start_token": 13824,
+          "stop_token": 276096,
+          "token_sha256": "a520373210113c73646b7f6337e3a24099b371da43fff5cc3fa6ff4d947d0f3f",
+          "first_block_sha256": "265661545023c124468a4d249c61eabc8cba1f90df1de934d4cc3c01e0eb95e8",
+          "history_sha256": "60e4aad0892188eb014fe4978774c57d5f8e529dfda2ed8696351701bd8ab5f5"
+        },
+        {
+          "request": 9,
+          "task": "reverse-engineering",
+          "start_token": 26240,
+          "stop_token": 288512,
+          "token_sha256": "e01c10bfde56b2fb42e743b8601ed0acc3adcff2e52ec44aef374ce9d7704663",
+          "first_block_sha256": "09f559769b438c83366c42a3b89052f455b2a24f5e1c0bd2d0a5c2de0d784b5d",
+          "history_sha256": "d72de06fa1b34e145c8563716f4d9e75ceb94f79a0b411086c61ba783eed1662"
+        },
+        {
+          "request": 10,
+          "task": "reverse-engineering",
+          "start_token": 38656,
+          "stop_token": 300928,
+          "token_sha256": "f72a24efe6401c525bd12926642a5117ac2a410507a9244eae6f3e642dcdd1f7",
+          "first_block_sha256": "e493017d8cecedeb6274754868ce802d2031e8a86a0bacc1db7cbd92df7b75d3",
+          "history_sha256": "991f884b91d1fd8a6ac209cfaf11b01e281d56aa26733d91e731716edc720375"
+        },
+        {
+          "request": 11,
+          "task": "reverse-engineering",
+          "start_token": 51072,
+          "stop_token": 313344,
+          "token_sha256": "2c8bc256ce6ca24f6daeb59e37363fb09643ef72965d277b1c5a70a4323c07ed",
+          "first_block_sha256": "a75289dc7bcf3973d1ee051148471a4907c257c36ee77ea192cd91e8d9ed9cfc",
+          "history_sha256": "15aa328209da5923d3083029b8b9e367be00c6dfc90f22124943b6c08abbe17b"
+        },
+        {
+          "request": 12,
+          "task": "reverse-engineering",
+          "start_token": 63488,
+          "stop_token": 325760,
+          "token_sha256": "2336c3212db0b25654e31730564c5b424659275d84886942be9cc155fb53d607",
+          "first_block_sha256": "45a677fc817319ea808e3b0e1b1f138fb14c0be754952eb0f101fe1bd42f6463",
+          "history_sha256": "475f6f7398dfb3cbd2beb249860c7ab19d20a302112ddd88cc40b292239dc822"
+        },
+        {
+          "request": 13,
+          "task": "reverse-engineering",
+          "start_token": 3712,
+          "stop_token": 265984,
+          "token_sha256": "bcf72b2d279da0534a903513cf90a168fac06ebfa11e32857f735f1dd38b1a8f",
+          "first_block_sha256": "758c386798ca548adad1b4ba87605d7def95de4e438c05f996c1bada1b62c9d2",
+          "history_sha256": "4c4ad46b0185ce8806eac538291ef5deadbb5ce0168730b7114d617466f2a029"
+        },
+        {
+          "request": 14,
+          "task": "reverse-engineering",
+          "start_token": 16128,
+          "stop_token": 278400,
+          "token_sha256": "c633489e1b6b328846538655173003eedc716be9b77efe980ec7292b6b3fa2bc",
+          "first_block_sha256": "ac9c877e5ee1e7efd2ec1b2ec34ac1d1b3e7103badfe5d3eb7a4a657a9c5d86e",
+          "history_sha256": "969ea36af17b1f9052517ea32fd6c829396d04009dc8700826b687a2a5ca1b94"
+        },
+        {
+          "request": 15,
+          "task": "fix-ocaml-gc",
+          "start_token": 245120,
+          "stop_token": 507392,
+          "token_sha256": "0ba13ddadd601670db0428c18c4aaf0dcd32ca79f2c13e5eb1c048d20c28fe55",
+          "first_block_sha256": "2ce7167a7965d1a2a070a423ada5cf010aab70bf28fef15faddae8a92563956e",
+          "history_sha256": "d1475c51da7b04ca9151e9ef02c6d6b9588a41f2883df24bafc8f2df9b3b4f99"
+        }
+      ]
+    },
+    {
+      "case": "h262144-q256-t2048",
+      "history": 262144,
+      "query": 256,
+      "requests": 8,
+      "local_requests": 4,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "fix-ocaml-gc",
+          "start_token": 122112,
+          "stop_token": 384512,
+          "token_sha256": "632f8e266a2759e7ce4c48be2c5210904100e11be4d2b44bd3598c458b16c0ba",
+          "first_block_sha256": "657517e67f5c7b4e9fa74b9f3e4e291355e221beeadc3f99c9c1924fda746dd7",
+          "history_sha256": "d1369c58c8876206db9efd46108fa8d17d5ae2930358e15ab8a9a19a7a868109"
+        },
+        {
+          "request": 1,
+          "task": "fix-ocaml-gc",
+          "start_token": 134528,
+          "stop_token": 396928,
+          "token_sha256": "6d08d5fa4b2e398b7408ef3ec7c827a2a39ac0747593c8a2f2d0e6eb71f52ddd",
+          "first_block_sha256": "70030eb0cf3eb2a45d3882e672e6ba3b5ef45e73699b2c0b816c676c401ab6ee",
+          "history_sha256": "87b5da6a77889c4ad8ee5d505f3b1c1d77876f985856f3bd6af66d42df45e157"
+        },
+        {
+          "request": 2,
+          "task": "fix-ocaml-gc",
+          "start_token": 146944,
+          "stop_token": 409344,
+          "token_sha256": "8cc0ea1dca2c13463d382e0a3970608f13121e8068cd3f337e117f882879859b",
+          "first_block_sha256": "e17a3dd09a390ec3b39924377c88b8d39ec89f2ead045e7336fd7e3027820382",
+          "history_sha256": "37a9ff2a3424ce8b18b9cdf59bf1d870f2827622ea78154da9dab63a4496cf96"
+        },
+        {
+          "request": 3,
+          "task": "reverse-engineering",
+          "start_token": 2816,
+          "stop_token": 265216,
+          "token_sha256": "d5e45322b7f31041872566e9e3a231a88737eaecc638e5c89dd790507f39284a",
+          "first_block_sha256": "16040c692153d0e1b669b19cc668b5b19473150d19625d67e8e1cbeef01e843f",
+          "history_sha256": "a3fa51bf3139a26c37dc626d3d71bce154ab7b0f43007c9d4ce99f4811f7a537"
+        },
+        {
+          "request": 4,
+          "task": "reverse-engineering",
+          "start_token": 15232,
+          "stop_token": 277632,
+          "token_sha256": "b4f0d48d737282418a34a3d7987a24ca7c8177ca08cf857e0b6119f962d00adc",
+          "first_block_sha256": "7339e57cbb7339fb90a99655f72fb857432923430c5e46a54ae68df9926ec8be",
+          "history_sha256": "98b4e166f4fdf5e6afa581fd0b5ace92ab547a16e35c72dd080cec137c93382e"
+        },
+        {
+          "request": 5,
+          "task": "reverse-engineering",
+          "start_token": 27648,
+          "stop_token": 290048,
+          "token_sha256": "3b9492b1eabff0bafada4a45463ae4f449b048f7055d5293ed497d8e6aee2774",
+          "first_block_sha256": "4d900a16f954e14c52c1a12b07cc0725b7c6606cfdde09a723d3aa2e89f0952d",
+          "history_sha256": "37e20ef7ba91176ab741907a4e8d8d8821e798a5dcd842bb24bb0f9e8a8e74b1"
+        },
+        {
+          "request": 6,
+          "task": "reverse-engineering",
+          "start_token": 40064,
+          "stop_token": 302464,
+          "token_sha256": "6ee6399a55ce51ed0667f472253f6bfdaef50aeaea6453a8f991e2a48352d09c",
+          "first_block_sha256": "85a1793651f09c9b02e72790aa7c7bc293d25ce400490a542b21a4f753153a26",
+          "history_sha256": "a3e33c2d2bb39d0bc4160975d7aca547be458fa3ffd430d8bc0cae405814589f"
+        },
+        {
+          "request": 7,
+          "task": "fix-ocaml-gc",
+          "start_token": 196608,
+          "stop_token": 459008,
+          "token_sha256": "f0dd18c4b7962ab10a439342304090043af09750dc0856add7c1e9f3991fc153",
+          "first_block_sha256": "2530ea13e152b873088bcd84fb56b8a87b32889354c42352b6c9b3996609c17f",
+          "history_sha256": "f67bdef070e2161a49a76591bd6a4ffa8b771e51e1ca2720f05f660f7cebe384"
+        }
+      ]
+    },
+    {
+      "case": "h262144-q512-t2048",
+      "history": 262144,
+      "query": 512,
+      "requests": 4,
+      "local_requests": 2,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "fix-ocaml-gc",
+          "start_token": 135680,
+          "stop_token": 398336,
+          "token_sha256": "4ae30543b20d1ec7f0c35e425087ccb26c4f284d1f11d3ef957dc1c5fc9c3c89",
+          "first_block_sha256": "470290d0b5b80b2bfe6b629a66542e23923d7d490d8761adee1859df357521e9",
+          "history_sha256": "fad2bbc9ab3c25e681197da0045bc63504e5402860c9f3ee5d53e75936991c60"
+        },
+        {
+          "request": 1,
+          "task": "reverse-engineering",
+          "start_token": 63872,
+          "stop_token": 326528,
+          "token_sha256": "f0dbc47e01776ecb181c14b4f09a7d99c54dae72f54772dbc0bce36e0c5888b3",
+          "first_block_sha256": "7d78c6be3f9065ad68a79e90d65e858ecd21a266a40037610b28b9e23b1d29a1",
+          "history_sha256": "71fb0790e4ddf6a954fc9322e95367df92fa1597a755f7ef0b7ed491e5b9560f"
+        },
+        {
+          "request": 2,
+          "task": "reverse-engineering",
+          "start_token": 4480,
+          "stop_token": 267136,
+          "token_sha256": "2f7aa27bf8e66c7c9e246ea64ca1052b3f64af2c3873662168f11d77ea5f4e24",
+          "first_block_sha256": "c1895527c77957b970ba86f3e56e9ac241f614c153c9ede6f820c7ea6ee79736",
+          "history_sha256": "e058e26e663cebe8a2e45abc1cca9926e63998de979892285ea0c49999ac28ad"
+        },
+        {
+          "request": 3,
+          "task": "reverse-engineering",
+          "start_token": 16896,
+          "stop_token": 279552,
+          "token_sha256": "00a13ce45d45c58b5cc115d7303cf0886e013a968bc05f81dc017c07c95bb39f",
+          "first_block_sha256": "c6584c7a14507befa7d428ab641fcaad46a4acf504b8e6b3c344aa4e21608e02",
+          "history_sha256": "3b0709d216e6434b1560126894874a80c8896a9242d69c9c020143d90ba0ce17"
+        }
+      ]
+    },
+    {
+      "case": "h262144-q1024-t2048",
+      "history": 262144,
+      "query": 1024,
+      "requests": 2,
+      "local_requests": 1,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "reverse-engineering",
+          "start_token": 6656,
+          "stop_token": 269824,
+          "token_sha256": "141d3adb07f352f4b36338594f7c7e6f41dddb91a8181d8d8a504549cbd58d98",
+          "first_block_sha256": "c532b6a47e26a3313a81805ca87c8e0a2d1a2889248e7ed796c9004c551625d7",
+          "history_sha256": "a5e74cadd89b7aa9383da97bc62344bec3dfe66fb4d1e9694f296e7369abe723"
+        },
+        {
+          "request": 1,
+          "task": "fix-ocaml-gc",
+          "start_token": 161664,
+          "stop_token": 424832,
+          "token_sha256": "265b3ee90462defdc03df792d2c1c6de506790e0adfb8d5ecfe179fab1b31843",
+          "first_block_sha256": "40eca4b092f0be9a15756a9a1b65e431b470165b254ba34dfe6f4542bb706868",
+          "history_sha256": "f6cfc8d34db5c5cadc838c676311aa6d73c5580440373a570aa735c525e03dda"
+        }
+      ]
+    },
+    {
+      "case": "h524288-q128-t2048",
+      "history": 524288,
+      "query": 128,
+      "requests": 16,
+      "local_requests": 8,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "fix-ocaml-gc",
+          "start_token": 175232,
+          "stop_token": 699648,
+          "token_sha256": "32c13e1f2c1f04596d9d63f849627b5aad8a050225ed2ed08fa4ebaa85efdd8f",
+          "first_block_sha256": "dec536805842edfd6341cee314b4085abea217531ed1388950190c565443a8b1",
+          "history_sha256": "13e113500cbc0edd53a0ef00c778f5321fd4cc455a5e572f52d0f61e2fc5718c"
+        },
+        {
+          "request": 1,
+          "task": "fix-ocaml-gc",
+          "start_token": 896,
+          "stop_token": 525312,
+          "token_sha256": "e8e5ee3ce2f82182ebdb19cace354debfd79b3eef05aa64737781a8446ab48d1",
+          "first_block_sha256": "14aab6bfeeee996f677234cc2f2057349edc6f9223116b5a79028c3bd224867d",
+          "history_sha256": "59c679b8ce45a337da82cfcf1aee4c8d888ed297582e8011169252d6972f1b3c"
+        },
+        {
+          "request": 2,
+          "task": "fix-ocaml-gc",
+          "start_token": 13312,
+          "stop_token": 537728,
+          "token_sha256": "6808a13d9fda461f3045e763dbe6c533436639619140ce767f855fe6f57d6aac",
+          "first_block_sha256": "b712420c696a591938a2bbee528a104a1a074e5ba444f40821f315d0583960f6",
+          "history_sha256": "a4c10e53542a8eb23a1119043b505bdc1cdb85f32eecd96f17d4c2ecb20687d6"
+        },
+        {
+          "request": 3,
+          "task": "fix-ocaml-gc",
+          "start_token": 25728,
+          "stop_token": 550144,
+          "token_sha256": "52100c27d2c16013cde56a6f429f247bb5840265980a6c3166d023d7515f5777",
+          "first_block_sha256": "a83df39f48e5211e54fe2c42652ebc24e1f80409640e172a08002b338d66023c",
+          "history_sha256": "517a0a75266d8d3981a077a0dd1c9b0acbe1c9e180387d11f0cd7cee52706d10"
+        },
+        {
+          "request": 4,
+          "task": "fix-ocaml-gc",
+          "start_token": 38144,
+          "stop_token": 562560,
+          "token_sha256": "72b1dcf79645335d7bb21b09b60ebca83f5c09da306cf662f39e8811a16dc817",
+          "first_block_sha256": "12f77dad2a9fe14e4ff128e2442769e2256fdc684af0b1017cfdda1a6d3be4f0",
+          "history_sha256": "8d46301b4ac51672152f6dc210b371fe65bed9c4f698b0c3c0047c2b98e35863"
+        },
+        {
+          "request": 5,
+          "task": "fix-ocaml-gc",
+          "start_token": 50560,
+          "stop_token": 574976,
+          "token_sha256": "8eed1435f52a0ba3eec9966b1be8137caf51b13b9c500a97200859d91e63aad1",
+          "first_block_sha256": "29282bf28ed47f9270fbfd3af2fc36e2d87a009dc9488435899dca6da31f7014",
+          "history_sha256": "baaafdfdf55db8599c52c71794e57f188d14f6ddc61c2ce2f44f320c47e4cda8"
+        },
+        {
+          "request": 6,
+          "task": "fix-ocaml-gc",
+          "start_token": 62976,
+          "stop_token": 587392,
+          "token_sha256": "f38a811e8ab2654b5afbc43024a359f063d11aea6d5694c8bf0926853c2862e2",
+          "first_block_sha256": "9b52b8e3b7eb4f121c637c9765a51e13c6181a4c1ad9f6617d58c60f02ab3215",
+          "history_sha256": "b0de9c60c6c0c5668fa8d43bd45dbc0aa37d1340e7d2957869b02dd54a3017a8"
+        },
+        {
+          "request": 7,
+          "task": "fix-ocaml-gc",
+          "start_token": 75392,
+          "stop_token": 599808,
+          "token_sha256": "044e617e3d1445e14b6e43b99a6c1606913078928718cce1b3fbf216f9e4c3d7",
+          "first_block_sha256": "0cded0be7f96eb924ce19124207836afbd1f61cc377b003f6b8e7f6e6bdb0052",
+          "history_sha256": "0992f4dcc05b578dd0ac3e5a5bed8008dbeab76577198eb13a7ef23a80f4f6f5"
+        },
+        {
+          "request": 8,
+          "task": "fix-ocaml-gc",
+          "start_token": 87808,
+          "stop_token": 612224,
+          "token_sha256": "d1f074bdcaaa1e6f05fa804e0e29b075d2705ee4bfdd12dd2ea92a90d4f40355",
+          "first_block_sha256": "a8ed884c50cd7df821342848264e70386b30a339654adbb372f40cfccbbb7080",
+          "history_sha256": "24da8ae8ebee2b774861e5870f83faeaac2214c4ddff85a42f5f04650c0f8952"
+        },
+        {
+          "request": 9,
+          "task": "fix-ocaml-gc",
+          "start_token": 112640,
+          "stop_token": 637056,
+          "token_sha256": "571a45c2dbe6af3707d71d27c21088e42249b09ec2a6030948e3d47488a9fb88",
+          "first_block_sha256": "1b99b2c5abc8f5a09923605bd52599e22dfbb643c9d1d5cfcbde06f8cc59cb95",
+          "history_sha256": "3d78d09337cb5f93f2dec180ecc0943a3cdc8285907f2ade094b7fb0190d155a"
+        },
+        {
+          "request": 10,
+          "task": "fix-ocaml-gc",
+          "start_token": 125056,
+          "stop_token": 649472,
+          "token_sha256": "3877bec1b43cdec6cff8ad046d8fd61d276a4542f90f0244840ac43ddacfd795",
+          "first_block_sha256": "f2fd7be7f9bd957375085d4387571bfe259ea8e35a4dd988616df6590089bf54",
+          "history_sha256": "19579ce364f3ace5d0544fddffcf84a5ae9d912d5ca63c3ab954727391b1f431"
+        },
+        {
+          "request": 11,
+          "task": "fix-ocaml-gc",
+          "start_token": 137472,
+          "stop_token": 661888,
+          "token_sha256": "622252222aa9559efb7ae940dcec3d270aef4438d12c1b5800d8ddfa5e11c8d6",
+          "first_block_sha256": "596692a81b3569f7e5e8c3518cf61fc05a66c48edbd12cee748a7558ac23fe67",
+          "history_sha256": "6843718759a553a443ab3cb83bee68c21c6c09b3d1ab21e2513407e1a14aae76"
+        },
+        {
+          "request": 12,
+          "task": "fix-ocaml-gc",
+          "start_token": 149888,
+          "stop_token": 674304,
+          "token_sha256": "45ddfbdfdc2c6e46d01424cc45e5e364d867f85f1ca130551de88a67c2157bc8",
+          "first_block_sha256": "71880afacadf050e96381c3276411ffbe259afa8e6cb50c1d5369c432f16e8ab",
+          "history_sha256": "44dce1b2a7fd64dd9a830cb85dfbf67fb254410f7f9904a4db2221ac03eb5032"
+        },
+        {
+          "request": 13,
+          "task": "fix-ocaml-gc",
+          "start_token": 174720,
+          "stop_token": 699136,
+          "token_sha256": "74ac13f4eb47dfac56e6374fcd1e2c1b883a6e2155d019c9576dea4fd71f8bd9",
+          "first_block_sha256": "b3b7d7224bd1be26a27a827f0006c92badd14ff6e3e6cd50807e7e7d3cdd16b1",
+          "history_sha256": "551fb1c9fe48f1fe269ef5f422afab5d44e168e46267140aedb7ecd837f56c07"
+        },
+        {
+          "request": 14,
+          "task": "fix-ocaml-gc",
+          "start_token": 12800,
+          "stop_token": 537216,
+          "token_sha256": "647a6532c13b636b143053ce8a8be04495a08a5282d19475bb0d5b803143b8fd",
+          "first_block_sha256": "a5875ebdcc2e41e25390dce0ae19c31a21dbe19af187710bb89a01a23c351ebc",
+          "history_sha256": "7493dc09274cc922c087540306fdbf423462344b6ac70fdf9497d8499486c515"
+        },
+        {
+          "request": 15,
+          "task": "fix-ocaml-gc",
+          "start_token": 25216,
+          "stop_token": 549632,
+          "token_sha256": "bd285332bfc6ea942dcfc7d90191328ac591811c369cba8dfbadd99982ab51b5",
+          "first_block_sha256": "1d2dbdeddb62e3ec42f131840cd60af8496a2611cbf29eb17b77dbe3f63ec7ad",
+          "history_sha256": "412f5293ac9d3fa5554f1d484ac32746efbc07d2da4aaf640a5d7f53426accb4"
+        }
+      ]
+    },
+    {
+      "case": "h524288-q256-t2048",
+      "history": 524288,
+      "query": 256,
+      "requests": 8,
+      "local_requests": 4,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "fix-ocaml-gc",
+          "start_token": 188800,
+          "stop_token": 713344,
+          "token_sha256": "19fe356f7fc2cbef0c23ee5126c1a36ea87a1ff50a92be949bbb0d9f3600a1f6",
+          "first_block_sha256": "9014c837b3fe33d2087f5bd603a4259b2efd9ef91173319a13c208f5bcf786fa",
+          "history_sha256": "fabd51cec6e13e018c55780789fb7a80f8231a1f2e7d241586bda374d401be74"
+        },
+        {
+          "request": 1,
+          "task": "fix-ocaml-gc",
+          "start_token": 2176,
+          "stop_token": 526720,
+          "token_sha256": "f4afa99aa73dfee625081b7ae4be4ea3a52c857efb18c23f594ce1e8fa7aa2c2",
+          "first_block_sha256": "fc403cd4c4b1afa8b7bf3d84cfba2df67682211b88c7424280c27e22502d3811",
+          "history_sha256": "6a0ea749b70f51a2b5c5a7c6f2db6fc35edb0414a19f15fe26e937ac8a0f9b22"
+        },
+        {
+          "request": 2,
+          "task": "fix-ocaml-gc",
+          "start_token": 14592,
+          "stop_token": 539136,
+          "token_sha256": "9c689a4818438a7c16f03c43ebdc4fa4d720c31124e9ac25eb5191917b575ec2",
+          "first_block_sha256": "3a8894c4682bce87f33028ddd7b6c784c45b87e7c83312fc3ff4945dbd4b22ca",
+          "history_sha256": "5ada398ba2c400e9c1e586ccf1dbbf476ea3d8e39de9b4c86b1c58c02bb2e6c9"
+        },
+        {
+          "request": 3,
+          "task": "fix-ocaml-gc",
+          "start_token": 27008,
+          "stop_token": 551552,
+          "token_sha256": "b9aee0afe6fb89660e975b2e6a836c7d6854a242fb954c835b109fbe7e13b16d",
+          "first_block_sha256": "9ee0b7abd4b960ebbb019a297f52d1bcb6671dcd88a85caf5c27214b9f6e6992",
+          "history_sha256": "d35b4a9e8ba5c216d833944b4e0fd199115e574e94207b1e0d64ce4e3b39faf6"
+        },
+        {
+          "request": 4,
+          "task": "fix-ocaml-gc",
+          "start_token": 39424,
+          "stop_token": 563968,
+          "token_sha256": "3328f783bb650adf9ce847727bcb5c567e78acb8ca91d2c4e5fb89bf038f5136",
+          "first_block_sha256": "eb76790166059d00a50e6f8bd22ce3d5c63748013a35e86f6fe5e3b84141be01",
+          "history_sha256": "c876afd036eec30e2a514ab99044e3393c34feee66b0c781f3cdd49b7090ac18"
+        },
+        {
+          "request": 5,
+          "task": "fix-ocaml-gc",
+          "start_token": 51840,
+          "stop_token": 576384,
+          "token_sha256": "a6c5142b5284b9265f98401d7ec770b858d8913742b6c49a11137985e4b0e385",
+          "first_block_sha256": "d135f42adeadda43a5a610cd2aed1ee8c01eb1e44c61cd3efb90c673a7feffee",
+          "history_sha256": "0b4f9b53d20a6f5fb656dbf1fbf600dc2567da2e73c53f61e1b5d7321b099a30"
+        },
+        {
+          "request": 6,
+          "task": "fix-ocaml-gc",
+          "start_token": 64256,
+          "stop_token": 588800,
+          "token_sha256": "7a826c5edfb8b094c1bb44e29fb170d0c78bc87a6c7ae1a45c655edc1bf0a841",
+          "first_block_sha256": "0434d979c16323425771e86e23e2479936153cb0e5e976b8b58d658f89b9c3c4",
+          "history_sha256": "1e9e5f652acb3b582653c993741bf7c2b0813362caac7c1f72d20ab1f8aea7a7"
+        },
+        {
+          "request": 7,
+          "task": "fix-ocaml-gc",
+          "start_token": 76672,
+          "stop_token": 601216,
+          "token_sha256": "c8718c29be465ca85daad707de0a25e662f106973533d624ecf833302161f66c",
+          "first_block_sha256": "0cd3db28568889d8fbba5dfd5a15822ebe140e9bae9ca7a0680be21f72c9db1b",
+          "history_sha256": "cf4f58ba6669240833414e4644df8d8e5a5af3de93a2fd621c25931a06be9d37"
+        }
+      ]
+    },
+    {
+      "case": "h524288-q512-t2048",
+      "history": 524288,
+      "query": 512,
+      "requests": 4,
+      "local_requests": 2,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "fix-ocaml-gc",
+          "start_token": 189952,
+          "stop_token": 714752,
+          "token_sha256": "537f87e3c10fdcfa44202193c1f59eee5442e376eb5defd72be22e5b161d8ca3",
+          "first_block_sha256": "5e1dfc8d801940e6d54233f78c7455e59c14ed7c8ad1286074c8dbe2efbb00db",
+          "history_sha256": "f64469652a040218e2ff21623abb87d9778fb46819b70655534b1d9fef0ceaa3"
+        },
+        {
+          "request": 1,
+          "task": "fix-ocaml-gc",
+          "start_token": 3584,
+          "stop_token": 528384,
+          "token_sha256": "3c35245e07d5e0d3532733175355c37242a39440ec04bba5fbfdccba6940da93",
+          "first_block_sha256": "1efd7ebb10397d0920ff910b18e7c9b601ca5c958c433e2e631e7debca9734ff",
+          "history_sha256": "f7548f453cea2c2766be3a054a23a866ea63e7cc57905f1d20f1cc884518fbf5"
+        },
+        {
+          "request": 2,
+          "task": "fix-ocaml-gc",
+          "start_token": 16000,
+          "stop_token": 540800,
+          "token_sha256": "ce8e4fe55e461edd52a1387143ebb80579b887e51ce097d44d2ff1a38652ce1b",
+          "first_block_sha256": "cdbef9542c297ce976bd9f618da1a139f298e6d810f806921e1b67fbf2de3d44",
+          "history_sha256": "64397f26835bd328cbf92fbf41a55665135faaf633c6e5595b5521f231a089e8"
+        },
+        {
+          "request": 3,
+          "task": "fix-ocaml-gc",
+          "start_token": 28416,
+          "stop_token": 553216,
+          "token_sha256": "16686290f6307850d5f451db8ca03e854c0581017eb500bc699cdcd68844475e",
+          "first_block_sha256": "17685c63d07a75e9ff3083872022e0b0d4e005446564f2be40a97e1bd44cea57",
+          "history_sha256": "53b473cb66a748671077561e203b17ee524bb3b1160c306e122932bc26a2684c"
+        }
+      ]
+    },
+    {
+      "case": "h524288-q1024-t2048",
+      "history": 524288,
+      "query": 1024,
+      "requests": 2,
+      "local_requests": 1,
+      "total_query_tokens": 2048,
+      "windows": [
+        {
+          "request": 0,
+          "task": "fix-ocaml-gc",
+          "start_token": 5248,
+          "stop_token": 530560,
+          "token_sha256": "476f2554c8a109240166847a2050650dffe0e03a2175a0142791ad62f246bb91",
+          "first_block_sha256": "1d736744c92b1100cdaa07f7f8f2b3ffc3ee0d3e546d4f1b9469960fde2b7e60",
+          "history_sha256": "c40bf83eae991760151ae7a2c89f700dad8564efb305fc546c5892242f798954"
+        },
+        {
+          "request": 1,
+          "task": "fix-ocaml-gc",
+          "start_token": 17664,
+          "stop_token": 542976,
+          "token_sha256": "9f16ce5d553f5d431c7753a5e6a7b78a4079d409099666402e86c54343f21d5c",
+          "first_block_sha256": "17360ef07fd5348fbb20a9660d554fdcf9fce8748c77eea77ec70d7854706d6a",
+          "history_sha256": "48c618cea0a08b1ca92cc10432c49a5af96b0dc31d18da1bfeda1ca948b0f695"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "task_name": "solana-data",
+      "agent": "Terminus2",
+      "traj_id": "terminus2-OpenAI__GPT-5-solana-data-e5980a09",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-solana-data-e5980a09.tar.zst",
+      "sha256": "437df85730a6de1652978d3221b96b35f686c76c8069ad6c3d94d8e5a403f199",
+      "canonical_sha256": "6f2d96c427de73e3173782946036f2de01d1feddebe6cd72fa0a44f273836a5b",
+      "canonical_file": "solana-data.txt",
+      "token_file": "solana-data.tokens.json",
+      "glm52_tokens": 63341,
+      "tokens_sha256_uint32_le": "b52e7b67be94609b647d7279a4f0a4276c5dec647c0b521c03a743e4613ed97f",
+      "solved": null
+    },
+    {
+      "task_name": "port-compressor",
+      "agent": "Terminus2",
+      "traj_id": "terminus2-OpenAI__GPT-5-port-compressor-a916ad03",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-port-compressor-a916ad03.tar.zst",
+      "sha256": "cd60ef367603670d722d01e3aa02c245e5e4b32964fd9abf97d48da8735ee613",
+      "canonical_sha256": "ba8e7ac63efe633e1160a6d6e12f0c3cb49111af4e4cec8752767f357032b2c6",
+      "canonical_file": "port-compressor.txt",
+      "token_file": "port-compressor.tokens.json",
+      "glm52_tokens": 81968,
+      "tokens_sha256_uint32_le": "cba0f0a81e0b2dfb18c412ac9aace79f7231621508e1cb8aa0c879b7cc4e839e",
+      "solved": null
+    },
+    {
+      "task_name": "add-benchmark-lm-eval-harness",
+      "agent": "Terminus2",
+      "traj_id": "terminus2-OpenAI__GPT-5-add-benchmark-lm-eval-harness-1f231d3c",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-add-benchmark-lm-eval-harness-1f231d3c.tar.zst",
+      "sha256": "60fa93986b8039ea37f821667cff4a7c4d3621692a645a53ab369730b9dc173e",
+      "canonical_sha256": "b4a81e630e44926da8216205d3d834920878a32afd1eb0bf0212b181d10e1f8b",
+      "canonical_file": "add-benchmark-lm-eval-harness.txt",
+      "token_file": "add-benchmark-lm-eval-harness.tokens.json",
+      "glm52_tokens": 52651,
+      "tokens_sha256_uint32_le": "c6e914c6b8bfac96ed7297c64a2992048cf23158ad1163218363220f37eec660",
+      "solved": null
+    },
+    {
+      "task_name": "3d-model-format-legacy",
+      "agent": "Terminus2",
+      "traj_id": "terminus2-OpenAI__GPT-5-3d-model-format-legacy-79cf6d53",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-3d-model-format-legacy-79cf6d53.tar.zst",
+      "sha256": "6bcd7e8429d3e2f0c41d1692cb2aa277ce4257932c0596b1924c71b4812237f3",
+      "canonical_sha256": "fa7d8b5dce33bec14e4e1a27e97a20a8742c9de89dd43e58d4153af63dd27329",
+      "canonical_file": "3d-model-format-legacy.txt",
+      "token_file": "3d-model-format-legacy.tokens.json",
+      "glm52_tokens": 115320,
+      "tokens_sha256_uint32_le": "d142b96e35bf63fd6f73756a8bb3210d3e3be57bfa0c35603ac5d7b71b222f7e",
+      "solved": null
+    },
+    {
+      "task_name": "schemelike-metacircular-eval",
+      "agent": "OpenHands",
+      "traj_id": "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-schemelike-metacircular-eval-6b87c8fa",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-schemelike-metacircular-eval-6b87c8fa.tar.zst",
+      "sha256": "8b6fc373bef8b8d273e4afd9ddeb3023104f041ab6da449bbdb103c1914c1431",
+      "canonical_sha256": "30c2357d0d6c5b00d04e303da9955fb245d1042d3b4893a33518da890dbe5bda",
+      "canonical_file": "schemelike-metacircular-eval.txt",
+      "token_file": "schemelike-metacircular-eval.tokens.json",
+      "glm52_tokens": 202379,
+      "tokens_sha256_uint32_le": "24f484273fe3223eac0fcf5daa902d147e86aac92b412af13183fe88991d1b6a",
+      "solved": null
+    },
+    {
+      "task_name": "polyglot-rust-c",
+      "agent": "OpenHands",
+      "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-polyglot-rust-c-4df91451",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-polyglot-rust-c-4df91451.tar.zst",
+      "sha256": "a58453e04089f07d446d03d784f4f2abba29c92cd3d25068c0a030efcb18fc83",
+      "canonical_sha256": "2a6d6e95baa59b63d937a484cccffc3e3fca3fda765f550eb1864cb622b4da17",
+      "canonical_file": "polyglot-rust-c.txt",
+      "token_file": "polyglot-rust-c.tokens.json",
+      "glm52_tokens": 118740,
+      "tokens_sha256_uint32_le": "3eba5f4768ed15927e41bfa0ea8e8be69db1dca31772c406ce7873d3b3b682a0",
+      "solved": null
+    },
+    {
+      "task_name": "fix-ocaml-gc",
+      "agent": "OpenHands",
+      "traj_id": "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-fix-ocaml-gc-96d6a796",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-fix-ocaml-gc-96d6a796.tar.zst",
+      "sha256": "51ef88aa6eacf762e22f70d0ca61835f9afef31a6ee1093e13978d2db760cfde",
+      "canonical_sha256": "c46170ef9d3300e4b5d48aa4644a0ed899c99196cf680315022ae2438ae6586a",
+      "canonical_file": "fix-ocaml-gc.txt",
+      "token_file": "fix-ocaml-gc.tokens.json",
+      "glm52_tokens": 723580,
+      "tokens_sha256_uint32_le": "85109a60a1566c316d8e433b1f8fed9cd9a1e7875d96b9707e04b8c54a17b3b5",
+      "solved": null
+    },
+    {
+      "task_name": "reverse-engineering",
+      "agent": "OpenHands",
+      "traj_id": "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-reverse-engineering-885a06d5",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-reverse-engineering-885a06d5.tar.zst",
+      "sha256": "389a9e17887e8b13295b4d84a18f97c9f3bfbb79ac5677cd5644e980d6cdfc6c",
+      "canonical_sha256": "ca035ad46de4506ea1935a90354cbc0d37b0d8087cf72ff0e5a521c78cee3803",
+      "canonical_file": "reverse-engineering.txt",
+      "token_file": "reverse-engineering.tokens.json",
+      "glm52_tokens": 334355,
+      "tokens_sha256_uint32_le": "34383a874d5668b77df52a801b235ca46f555bbaaa46663891dec507392176e5",
+      "solved": null
+    },
+    {
+      "task_name": "get-bitcoin-nodes",
+      "agent": "Terminus2",
+      "traj_id": "terminus2-DeepSeek__DeepSeek-V3.2-get-bitcoin-nodes-081db50d",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-DeepSeek__DeepSeek-V3.2-get-bitcoin-nodes-081db50d.tar.zst",
+      "sha256": "39b88cdaf1adfddf8897daf64e8f232848abc384136f7b0a2d8c991acc3f1445",
+      "canonical_sha256": "cac13bd1158ee649b7c0a42286cc54b6fc6988c36c55874cbe52e95a797dc8a5",
+      "canonical_file": "get-bitcoin-nodes.txt",
+      "token_file": "get-bitcoin-nodes.tokens.json",
+      "glm52_tokens": 45997,
+      "tokens_sha256_uint32_le": "c57e1ae01b7ee50f6d90266084420fcda6f12537200b55e3b11ade0016aec431",
+      "solved": true
+    },
+    {
+      "task_name": "cross-entropy-method",
+      "agent": "Terminus2",
+      "traj_id": "terminus2-OpenAI__GPT-5-cross-entropy-method-ff12e6cc",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-cross-entropy-method-ff12e6cc.tar.zst",
+      "sha256": "06ec482f6645bbb877d500ff0fa7acb8f65af4012827894eaba42421cf89ca8b",
+      "canonical_sha256": "cbd19e21974c340c7de98cec2c1d18d49d7602bda5806b3bb401ff13cfdd0684",
+      "canonical_file": "cross-entropy-method.txt",
+      "token_file": "cross-entropy-method.tokens.json",
+      "glm52_tokens": 31195,
+      "tokens_sha256_uint32_le": "c291afaf4cfbe309a777718c65465250ae3173cc0322ce0728caf836d4e65234",
+      "solved": true
+    },
+    {
+      "task_name": "wasm-pipeline",
+      "agent": "Terminus2",
+      "traj_id": "terminus2-DeepSeek__DeepSeek-V3.2-wasm-pipeline-0d31d36b",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-DeepSeek__DeepSeek-V3.2-wasm-pipeline-0d31d36b.tar.zst",
+      "sha256": "d6b178576e8872147b6c2741baed2f9123351e4ec35b5c49b060f353ac5b0607",
+      "canonical_sha256": "8bddf28145a44a633af8dd97ae2c077f254508c8fdbae521fc8cc8cd2e1f56fe",
+      "canonical_file": "wasm-pipeline.txt",
+      "token_file": "wasm-pipeline.tokens.json",
+      "glm52_tokens": 27901,
+      "tokens_sha256_uint32_le": "789dc292b7a1f54756795f6c7832e5d7c9c9a942e476f67f8e83f570c10f2b0e",
+      "solved": true
+    },
+    {
+      "task_name": "cobol-modernization",
+      "agent": "Terminus2",
+      "traj_id": "terminus2-DeepSeek__DeepSeek-V3.2-cobol-modernization-9a3a9e4f",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-DeepSeek__DeepSeek-V3.2-cobol-modernization-9a3a9e4f.tar.zst",
+      "sha256": "ccc24bd3cc7542077fc4f64a890037901c310ed8423f35bba57c67fa5e9c8b4d",
+      "canonical_sha256": "123eb5717d6215bfd810cf1d2b0200c3c66a91b6729d2c94c7cda3d1374a5a82",
+      "canonical_file": "cobol-modernization.txt",
+      "token_file": "cobol-modernization.tokens.json",
+      "glm52_tokens": 21721,
+      "tokens_sha256_uint32_le": "5ff63320874f26d738f990bfcff51d90864eda0d16dbf5a069550f8994b6b5b8",
+      "solved": true
+    },
+    {
+      "task_name": "pypi-server",
+      "agent": "Terminus2",
+      "traj_id": "terminus2-Qwen__Qwen3-Coder-480B-A35B-Instruct-pypi-server-03e4faa2",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-Qwen__Qwen3-Coder-480B-A35B-Instruct-pypi-server-03e4faa2.tar.zst",
+      "sha256": "979d5695a3ddc31a5a7ebfb9c1e88d4e5d85365883882b2e0998901bfd136b4d",
+      "canonical_sha256": "4c68dec087825f13b9229d7ffdb0bc635288757b75ba78a8fbefe4ef147aa09f",
+      "canonical_file": "pypi-server.txt",
+      "token_file": "pypi-server.tokens.json",
+      "glm52_tokens": 34468,
+      "tokens_sha256_uint32_le": "541d1569e3aa6c51c246e61236f74b8b0ca9614221ebee3690e951b57d52a678",
+      "solved": true
+    },
+    {
+      "task_name": "huggingface__transformers-27463",
+      "agent": "OpenHands",
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-27463-9129234e",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-OpenAI__GPT-5-huggingface__transformers-27463-9129234e.tar.zst",
+      "sha256": "8046c12884ff5ce1f798935697f9db5136b568b1d9be291d5fa19e9f69e94823",
+      "canonical_sha256": "b3a608d923111a27d8acb81427f619d15a6501fa637b523f512b6a9c852d7335",
+      "canonical_file": "huggingface__transformers-27463.txt",
+      "token_file": "huggingface__transformers-27463.tokens.json",
+      "glm52_tokens": 109087,
+      "tokens_sha256_uint32_le": "7618029715296433b5ea5a2dc7ced0df97c48b28f6b8c709202debf11c20d0ba",
+      "solved": true
+    },
+    {
+      "task_name": "build-pmars",
+      "agent": "Terminus2",
+      "traj_id": "terminus2-OpenAI__GPT-5-build-pmars-b132c470",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/terminus2-OpenAI__GPT-5-build-pmars-b132c470.tar.zst",
+      "sha256": "37d9a65fd1254a070c5679c5526b81898082844ad632e86d12cb0966bfc4f6e7",
+      "canonical_sha256": "e5acb234c4a8788f91d544057ff91d78bf5e418bf140760649ea3ff9da4905a3",
+      "canonical_file": "build-pmars.txt",
+      "token_file": "build-pmars.tokens.json",
+      "glm52_tokens": 15323,
+      "tokens_sha256_uint32_le": "031004c483310a62d3bd753bdf24719fc666d3943f601163099c1230668da423",
+      "solved": true
+    },
+    {
+      "task_name": "instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan",
+      "agent": "OpenHands",
+      "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan-450efae7",
+      "download_url": "https://hf-mirror.com/datasets/Contextbench/Tracebench/resolve/main/bench_artifacts/full/openhands-OpenAI__GPT-5-instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan-450efae7.tar.zst",
+      "sha256": "958d1648e39bac1255d5c0a0c48568c4a5644e00b7032c69e8de82f776a7466c",
+      "canonical_sha256": "926bdb38a57f632651fed3b99ad9a798d96f5aa436e7046a66aac28987ddd360",
+      "canonical_file": "instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan.txt",
+      "token_file": "instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan.tokens.json",
+      "glm52_tokens": 77292,
+      "tokens_sha256_uint32_le": "94b55f805c6754cd7ee7a3453c4b85596db8af878869a84d0ce2ffce7828e780",
+      "solved": true
+    }
+  ],
+  "case_count": 16,
+  "total_requests": 120,
+  "source_manifests": [
+    "manifest.json"
+  ],
+  "source_kind": "Contiguous windows of recorded public coding event streams",
+  "scope": "Global T=2048; per-DP T=1024 at DP2; H64K..512K; Q128..1024; real coding windows",
+  "history_and_increment_contiguous": true,
+  "synthetic_padding_tokens": false,
+  "topology": "TP8/DP2/EP16",
+  "reference_metadata_note": "Source manifest provenance paths reduced to basenames for publication; source hashes and all windows preserved."
+}

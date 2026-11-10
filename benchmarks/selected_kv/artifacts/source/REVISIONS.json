@@ -1,0 +1,26 @@
+{
+  "M3v15": {
+    "commit": "db85ccd37d8fe90b9835903355f3bc92c1220e85",
+    "tag": "M3v15",
+    "tag_type": "annotated"
+  },
+  "native": {
+    "commit": "fbb4d867d22095047473e3c7ca9db053f5f4c7b0"
+  },
+  "archives": {
+    "core-native-runtime-source.tar.gz": "0c925824259169994f7418f77d769ec32c2f15afd2b53e12af0f67f2dd7e9ae3",
+    "core-native-install-source.tar.gz": "fdb2209d8dbec7ca2c2f288df0b80107b1768a1c4e704085afbb84d9ff9a4a34"
+  },
+  "historical_source_archive_sha256": {
+    "ascend-native-fbb4d867.tar.gz": "fbab45ae7d2ee52df93ca554305b66da438bd62098fe161d8c16b41d8b246060",
+    "ascend-M3v15-db85ccd.tar.gz": "6df4817773819c769a743e99ddbf1db9aa9e9b377482b9fde2ff0ea4593b7da3"
+  },
+  "source_layout": "M3 production source is the enclosing Git repository; native is an optional external detached worktree at the pinned baseline.",
+  "publication_production_snapshot": {
+    "git_commit": "721e1e985f477e9f8bb785c47fdbd3b4dcb6ef94",
+    "git_tree": "19989cdf87d70f6a3874374fb4cdfe0ecbbace89",
+    "original_code_commit": "db85ccd37d8fe90b9835903355f3bc92c1220e85",
+    "original_code_tree": "19989cdf87d70f6a3874374fb4cdfe0ecbbace89",
+    "scope": "The production commit tree equals the original M3v15 tree. Later reproduction/document commits have different full trees; production file hashes remain pinned."
+  }
+}
