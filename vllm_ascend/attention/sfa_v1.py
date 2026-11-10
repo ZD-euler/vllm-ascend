@@ -75,6 +75,7 @@ from vllm_ascend.utils import (
 if TYPE_CHECKING:
     from vllm.v1.core.sched.output import SchedulerOutput
 
+    from vllm_ascend.distributed.kv_transfer.sparse_kv_offload.prefill_selected_runtime import SelectedKVBatch
     from vllm_ascend.worker.npu_input_batch import NPUInputBatch
 
 
@@ -441,6 +442,8 @@ class AscendSFAMetadata:
     smla_topk_length: torch.Tensor | None = None
     smla_valid_mask: torch.Tensor | None = None
     smla_sinks: torch.Tensor | None = None
+    # Execution-only selection; original cache ownership and append slots stay unchanged.
+    selected_kv: "SelectedKVBatch | None" = None
 
 
 M = TypeVar("M", bound=AscendSFAMetadata)
@@ -2095,6 +2098,13 @@ class AscendSFAImpl(MLAAttentionImpl):
         # inside the indexer's forward would leave their gate closed.
         with attention_transfer_window():
             if has_local_query:
+                if attn_metadata.selected_kv is not None:
+                    attn_metadata.selected_kv.load(
+                        self.layer_name,
+                        topk_indices,
+                        (kv_cache[0],),
+                        attn_metadata,
+                    )
                 attn_output = self._execute_sparse_flash_attention_process(
                     ql_nope,
                     q_pe,

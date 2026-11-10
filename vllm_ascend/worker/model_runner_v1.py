@@ -151,6 +151,7 @@ from vllm_ascend.compilation.acl_graph import (
 )
 from vllm_ascend.compilation.breakable_aclgraph import BreakableACLGraphWrapper
 from vllm_ascend.core.kv_cache_interface import is_circular_kv_cache_spec
+from vllm_ascend.core.selected_kv_binding import selected_kv_forward
 from vllm_ascend.device.hardware_profile import HardwareCapability, get_current_hardware_profile
 from vllm_ascend.distributed.kv_transfer.kv_p2p.sfa_pd_rd2h import get_prebound_copy_sfa_slots
 from vllm_ascend.distributed.kv_transfer.kv_pool.ascend_store.layerwise_cache_layout import (
@@ -260,6 +261,9 @@ from vllm_ascend.sample.rejection_sampler import AscendRejectionSampler
 if TYPE_CHECKING:
     import xgrammar as xgr  # type: ignore[import-untyped]
     from vllm.v1.core.sched.output import GrammarOutput, SchedulerOutput
+
+    from vllm_ascend.core.selected_kv_config import SelectedKVBudget
+    from vllm_ascend.distributed.kv_transfer.sparse_kv_offload.prefill_selected_runtime import SelectedKVRuntime
 else:
     xgr = LazyLoader("xgr", globals(), "xgrammar")
 
@@ -675,6 +679,8 @@ class NPUModelRunner(GPUModelRunner):
         self.sparse_kv_offload_config = self.ascend_config.sparse_kv_offload_config
         self.sparse_kv_offload_enabled = self.sparse_kv_offload_config.enabled
         self.sparse_kv_offload_manager = None
+        self.selected_kv_runtime: SelectedKVRuntime | None = None
+        self._selected_kv_budget: SelectedKVBudget | None = None
         self.tp_rank = get_tensor_model_parallel_rank() if model_parallel_is_initialized() else 0
 
         # Per-request metadata consumed by the Sparse KV offload resident LRU.
@@ -2678,9 +2684,15 @@ class NPUModelRunner(GPUModelRunner):
                         mamba_copy_connector = connector
                 if mamba_copy_connector is None:
                     mamba_utils.do_mamba_copy_block(preprocess_bufs)
-            hidden_states = self._model_forward(
-                num_tokens_padded, input_ids, positions, intermediate_tensors, inputs_embeds, **model_kwargs
+            selected_kv_context = (
+                selected_kv_forward(self, scheduler_output, attn_metadata)
+                if self.ascend_config.selected_kv_config.enabled
+                else nullcontext()
             )
+            with selected_kv_context:
+                hidden_states = self._model_forward(
+                    num_tokens_padded, input_ids, positions, intermediate_tensors, inputs_embeds, **model_kwargs
+                )
             self._cpp_execution_time_ms = _finish_profiling_chunk_timing(
                 profiling_chunk_config,
                 execution_start_time,
@@ -4782,6 +4794,11 @@ class NPUModelRunner(GPUModelRunner):
                     layer.impl.bind_copy_sfa_kv_cache(self.sparse_kv_offload_manager, layer_name)
         if has_kv_transfer_group():
             get_kv_transfer_group().register_kv_caches(kv_caches)
+
+        if self.ascend_config.selected_kv_config.enabled:
+            from vllm_ascend.core.selected_kv_binding import initialize_selected_kv
+
+            initialize_selected_kv(self, kv_cache_config, kv_caches)
 
         self.kvpp = KVPPRuntime.create_from_kv_cache(
             vllm_config=self.vllm_config,

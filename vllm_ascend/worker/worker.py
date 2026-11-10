@@ -368,6 +368,10 @@ class NPUWorker(WorkerBase):
         self._weight_update_active = False
 
     def shutdown(self) -> None:
+        selected_runtime = getattr(getattr(self, "model_runner", None), "selected_kv_runtime", None)
+        if selected_runtime is not None:
+            selected_runtime.close()
+            selected_runtime.source.close()
         state = getattr(getattr(self, "model_runner", None), "eplb_state", None)
         if isinstance(state, AscendEplbState):
             state.close()
@@ -632,6 +636,12 @@ class NPUWorker(WorkerBase):
             "isolate vLLM in its own container."
         )
         self.available_kv_cache_memory_bytes = self.requested_memory - profile_result.non_kv_cache_memory
+        if get_ascend_config().selected_kv_config.enabled:
+            from vllm_ascend.core.selected_kv_binding import reserve_selected_kv_workspace
+
+            self.available_kv_cache_memory_bytes = reserve_selected_kv_workspace(
+                self, int(self.available_kv_cache_memory_bytes)
+            )
         self.available_kv_cache_memory_bytes = self._scale_kv_cache_memory_for_multi_group(
             self.available_kv_cache_memory_bytes,
         )

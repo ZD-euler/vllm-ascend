@@ -657,6 +657,7 @@ class TestKVPoolWorkerHelpers(unittest.TestCase):
         worker.layer_load_finished_events = [threading.Event()]
         worker.kv_recv_thread = MagicMock()
         worker.external_slot_release_waiter = MagicMock()
+        worker.selected_kv_source = None
         worker._submit_ready_layer_loads = MagicMock()
 
         worker.wait_for_layer_load()

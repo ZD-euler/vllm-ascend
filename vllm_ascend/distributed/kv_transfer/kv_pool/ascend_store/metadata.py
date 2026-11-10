@@ -3,7 +3,7 @@ from __future__ import annotations
 import math
 from collections.abc import Callable, Iterable, Mapping, Sequence
 from dataclasses import dataclass, field
-from typing import Any, cast
+from typing import TYPE_CHECKING, Any, cast
 
 import numpy as np
 import torch
@@ -15,6 +15,9 @@ from vllm.v1.kv_cache_interface import FullAttentionSpec, UniformTypeKVCacheSpec
 
 from vllm_ascend.core.kv_cache_interface import is_prefix_cacheable
 from vllm_ascend.distributed.kv_transfer.kv_pool.ascend_store.attention_fence import AttentionComputeStartGate
+
+if TYPE_CHECKING:
+    from .selected_kv_source import MainLoadFilter
 
 
 def is_kv_save_role(kv_role: str, consumer_is_to_put: bool) -> bool:
@@ -1307,6 +1310,8 @@ class SharedBlockData:
     block_keys: list[str] | None = None
     save_keys: list[str] = field(default_factory=list)
     load_keys: list[str] = field(default_factory=list)
+    # Optional immutable main-component mask; save and LI rows remain native.
+    main_load_filter: MainLoadFilter | None = None
 
 
 @dataclass

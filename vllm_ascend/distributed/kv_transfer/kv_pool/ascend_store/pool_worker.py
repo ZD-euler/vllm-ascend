@@ -7,7 +7,7 @@ import threading
 import time
 from collections.abc import Callable, Generator, Sequence
 from contextlib import suppress
-from typing import Any, cast
+from typing import TYPE_CHECKING, Any, cast
 
 import numpy as np
 import torch
@@ -105,6 +105,9 @@ from vllm_ascend.distributed.utils import (
     get_decode_context_model_parallel_rank,
     get_decode_context_model_parallel_world_size,
 )
+
+if TYPE_CHECKING:
+    from .selected_kv_source import SelectedKVSource
 
 # PERF-TUNE switch: defer the last layer's save drain out of the forward
 # critical path; the drain runs at the start of the next step's start_load_kv.
@@ -469,6 +472,7 @@ class KVPoolWorker:
     def _init_state_vars(self) -> None:
         self.kv_send_thread: KVTransferThread | None = None
         self.kv_recv_thread: KVTransferThread | None = None
+        self.selected_kv_source: SelectedKVSource | None = None
         self._previous_save_batch: KVCacheStoreBatch | None = None
         self._transfer_threads_started = False
         self.external_slot_release_waiter: Callable[[int], None] | None = None
@@ -1229,12 +1233,17 @@ class KVPoolWorker:
         """Prepare per-step hook state when the runner binds metadata."""
         assert self.use_layerwise
         self._drain_deferred_last_save()
+        selected_source = self.selected_kv_source
+        if selected_source is not None:
+            selected_source.begin_prepare()
         self.current_layer = 0
         self.layerwise_retrievers: list[Any] = []
         self.next_layer_to_submit = 0
         reset_attention_compute_start_gate()
         self._attention_saved_layers = set()
         self.process_layer_data(metadata.requests)
+        if selected_source is not None:
+            selected_source.native_prepared(metadata)
 
     def start_load_kv(self, metadata: AscendConnectorMetadata):
         if self.use_layerwise:
@@ -1901,6 +1910,7 @@ class KVPoolWorker:
         """
         if not self.use_layerwise_transfer:
             return
+        selected_source = self.selected_kv_source
         for request in requests:
             if request.load_spec is None or not request.load_spec.can_load:
                 continue
@@ -2094,8 +2104,14 @@ class KVPoolWorker:
                     if leased_infos is None or len(leased_infos) != len(leased_keys):
                         self.m_store.batch_remove_lease([*all_group_load_keys, *leased_keys])
                         raise RuntimeError("Memcache leased key-info response length mismatch")
+                    if selected_source is not None:
+                        selected_source.record_leased_infos(leased_keys, leased_infos)
+                    key_indices: dict[str, int] = {}
+                    for index, key in enumerate(keys):
+                        # Preserve keys.index()'s first occurrence for repeated keys.
+                        key_indices.setdefault(key, index)
                     for key, info in zip(leased_keys, leased_infos, strict=True):
-                        index = keys.index(key)
+                        index = key_indices[key]
                         gvas[index] = (
                             next((address for address in info.gva_list() if address > 0), 0) if info is not None else 0
                         )
@@ -2796,6 +2812,9 @@ class KVPoolWorker:
             attention_start_gate = None
             if self.layer_load_tasks[layer_id] and layer_id != self.current_layer:
                 attention_start_gate = get_attention_compute_start_gate()
+                source = self.selected_kv_source
+                if source is not None and source.step is not None:
+                    source.step.defer_indexer(layer_id, self.current_layer)
             recv_thread.add_request(
                 LayerLoadTask(  # type: ignore[arg-type]
                     wait_for_save_layer=reuse_source,
@@ -2861,6 +2880,9 @@ class KVPoolWorker:
                 self._finish_current_layerwise_load_sessions()
             raise
         self.layer_load_finished_events[self.current_layer].clear()
+        selected_source = self.selected_kv_source
+        if selected_source is not None:
+            selected_source.native_layer_ready(self.current_layer)
         if getattr(self, "block_key_hybrid", False) and self.current_layer == self.num_layers - 1:
             # The final model layer can have no reachable load rows. Completion
             # belongs to the whole request, not whichever group happens to end here.

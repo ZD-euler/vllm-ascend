@@ -482,6 +482,10 @@ class LayerBatchBuilder:
         addr_array, size_array, gvas_array = self._build_transfer_arrays(
             shared.block_ids_arr, shared.block_gvas_arr, layer_id
         )
+        if shared.main_load_filter is not None:
+            addr_array, size_array, gvas_array = shared.main_load_filter.apply(
+                layer_id, addr_array, size_array, gvas_array
+            )
 
         return LayerBatchReqMeta(
             req_ids=shared.req_ids,
@@ -2214,6 +2218,9 @@ class KVCacheStoreLayerRecvingThread(KVTransferThread):
         self.max_transfer_bytes = max_transfer_bytes
         self.external_slot_release_waiter = external_slot_release_waiter
         self.save_failure_checker = save_failure_checker
+        # Installed by the selected source until all native and selected readers retire.
+        self.read_lease_release: Callable[[list[str]], None] | None = None
+        self.selected_indexer_load: Callable[[int], None] | None = None
         self._invalid_block_ids = invalid_block_ids if invalid_block_ids is not None else set()
         self._invalid_block_ids_lock = invalid_block_ids_lock or threading.Lock()
         self._load_abort_event = load_abort_event or threading.Event()
@@ -2453,6 +2460,8 @@ class KVCacheStoreLayerRecvingThread(KVTransferThread):
         size_array = np.concatenate(all_sizes) if len(all_sizes) > 1 else all_sizes[0]
         if self.external_slot_release_waiter is not None:
             self.external_slot_release_waiter(layer_id)
+        if self.selected_indexer_load is not None:
+            self.selected_indexer_load(layer_id)
         res = self._batch_copy_with_limits(
             gvas_array,
             addr_array,
@@ -2474,9 +2483,13 @@ class KVCacheStoreLayerRecvingThread(KVTransferThread):
 
         if layer_id == self.final_layer_id and all_load_keys:
             unique_load_keys = list(dict.fromkeys(all_load_keys))
-            self.m_store.batch_remove_lease(unique_load_keys)
+            release = self.read_lease_release
+            if release is None:
+                self.m_store.batch_remove_lease(unique_load_keys)
+            else:
+                release(unique_load_keys)
             logger.debug(
-                "[KVPOOL] load_thread released %d leases after final layer %d",
+                "[KVPOOL] load_thread completed native reads for %d leased keys after final layer %d",
                 len(unique_load_keys),
                 layer_id,
             )
